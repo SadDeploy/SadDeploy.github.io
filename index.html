@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>ЖК "Триумф-Парк"</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Service information-->
+    <meta name="author" content="humans.txt">
+    <meta name="robots" content="">
+    <!-- Android-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fff">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+    <!-- iOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/touch/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+    <!-- Windows 8 Tile-->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#fff">
+    <!-- Styles-->
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/styles.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  </head>
+  <body class="page-home">
+    <div id="feedback" class="popup">
+      <div class="popup__header text--center">
+        <h3>Обратный звонок</h3>
+      </div>
+      <div class="popup__main">
+        <form action="/sendMail.php" method="post">
+          <div class="row center-xs middle-xs">
+            <div class="col-xs-2 text--right">
+              <label>Имя:</label>
+            </div>
+            <div class="col-xs-8">
+              <div class="box-row">
+                <input type="text" class="form-control" name="name">
+              </div>
+            </div>
+          </div>
+          <div class="row center-xs middle-xs padtop20">
+            <div class="col-xs-2 text--right">
+              <label>Телефон:</label>
+            </div>
+            <div class="col-xs-8">
+              <div class="box-row">
+                <input type="text" class="validate-phone form-control" name="phone">
+				<input type="hidden" class="form-control" name="recall" value="1">
+              </div>
+            </div>
+            <div class="col-xs-12 padtop40"><input type="submit" class="btn btn--danger" value="Отправить"/></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="bookme" class="popup">
+      <div class="popup__header text--center">
+        <h3>Забронировать квартиру</h3>
+      </div>
+      <div class="popup__main">
+        <form action="/sendMail.php" method="post">
+          <div class="row center-xs middle-xs">
+            <div class="col-xs-2 text--right">
+              <label>Имя:</label>
+            </div>
+            <div class="col-xs-8">
+              <div class="box-row">
+                <input type="text" class="form-control" name="name">
+              </div>
+            </div>
+          </div>
+          <div class="row center-xs middle-xs padtop20">
+            <div class="col-xs-2 text--right">
+              <label>Телефон:</label>
+            </div>
+            <div class="col-xs-8">
+              <div class="box-row">
+                <input type="text" class="validate-phone form-control" name="phone">
+				<input type="hidden" class="form-control" name="resereve" value="1">
+				<input type="hidden" class="form-control"  id="flatInput" name="flat" value="">
+              </div>
+            </div>
+            <div class="col-xs-12 padtop40"><input type="submit" class="btn btn--danger" value="Отправить"/></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <main role="main" class="site-main">
+    <header role="banner" class="site-header">
+      <div class="container" style="z-index: 9999;">
+        <nav role="navigation" class="navbar">
+          <ul class="nav navbar-nav pull-left">
+            <li class="nav__element"><a href="#benefits" class="nav__element-item">Преимущества</a></li>
+            <li class="nav__element"><a href="#gallery" class="nav__element-item">Галерея</a></li>
+            <li class="nav__element"><a href="#book" class="nav__element-item">Забронировать квартиру</a></li>
+            <li class="nav__element"><a href="#video" class="nav__element-item">Видео-презентация</a></li>
+          </ul>
+          <p class="padtop20 padright30 pull-right text--primary font--lg"><b>8 (8422) 50 50 60</b></p>
+          <div class="clearfix"></div>
+          <div class="row end-xs"><a href="#feedback" class="btn btn--primary fancybox">Обратный звонок</a></div>
+        </nav>
+        <div class="padtop100 text--center">
+          <h1>Жилой комплекс «Триумф Парк»</h1>
+          <p class="font--md text--primary padbot30"><b>Квартиры от 30 тыс. рублей. за 1 кв.м.</b></p><a href="#bookme" class="btn btn--default fancybox">Забронировать</a>
+        </div>
+      </div>
+
+      <div id="video-wrap" class="banner video-wrap">
+          <video  preload="metadata"  id="my-video" loop autoplay width="1900" height="1200" poster="video/mult.jpg" style="top: -66px;">
+              <source  width="1900" height="1200"  src="video/mult.mp4" type="video/mp4">
+          </video>
+      </div>
+      <div class="statis-banner"></div>
+    </header>
+      <!-- benefits start-->
+      <div id="benefits" class="benefits">
+        <div class="container">
+          <h2 class="text--center padbot30">Преимущества</h2>
+          <div class="row">
+            <div class="col-xs-6"><img src="images/icons/icons_01.png" alt="" class="pull-left padright10">
+              <div class="pull-left">
+                <h4 class="padtop20">Кирпично-монолитный дом</h4>
+                <p>Дом высокой прочности с подземным<br>паркингом</p>
+              </div>
+            </div>
+            <div class="col-xs-6"><img src="images/icons/icons_02.png" alt="" class="pull-left padright10">
+              <div class="pull-left">
+                <h4 class="padtop20">Новая инфраструктура</h4>
+                <p>Школы, детские сады, поликлиники, ТРК</p>
+              </div>
+            </div>
+            <div class="col-xs-6"><img src="images/icons/icons_03.png" alt="" class="pull-left padright10">
+              <div class="pull-left">
+                <h4 class="padtop20">Парковая зона</h4>
+                <p>Парк имени 40-летия ВЛКСМВ 10 минутах<br>от вас</p>
+              </div>
+            </div>
+            <div class="col-xs-6"><img src="images/icons/icons_04.png" alt="" class="pull-left padright10">
+              <div class="pull-left">
+                <h4 class="padtop20">Do@Home (Умный дом)</h4>
+                <p>Управляйте своим домом прямо с<br>мобильного устройства</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- benefits end-->
+      <!-- slider start-->
+      <div id="gallery" class="gallery">
+        <div class="container">
+          <div id="slider" class="flexslider">
+            <ul class="slides">
+			  <li><img src="images/slider/photo1.jpg" alt=""></li>
+               <li><img src="images/slider/photo2.jpg" alt=""></li>
+               <li><img src="images/slider/photo3.jpg" alt=""></li>
+               <li><img src="images/slider/photo4.jpg" alt=""></li>
+              <li><img src="images/slider/photo5.jpg" alt=""></li>
+              <li><img src="images/img_01.jpg" alt=""></li>
+              <li><img src="images/img_02.jpg" alt=""></li>
+              <li><img src="images/img_03.jpg" alt=""></li>
+              <li><img src="images/img_04.jpg" alt=""></li>
+              <li><img src="images/img_05.jpg" alt=""></li>
+              <li><img src="images/img_06.jpg" alt=""></li>
+              <li><img src="images/img_07.jpg" alt=""></li>
+            </ul>
+          </div>
+          <div id="carousel" class="flexslider">
+            <ul class="slides">
+			<li><img src="images/slider/photo1s.jpg" alt=""></li>
+               <li><img src="images/slider/photo2s.jpg" alt=""></li>
+               <li><img src="images/slider/photo3s.jpg" alt=""></li>
+               <li><img src="images/slider/photo4s.jpg" alt=""></li>
+              <li><img src="images/slider/photo5s.jpg" alt=""></li>
+              <li><img src="images/img_01s.jpg" alt=""></li>
+              <li><img src="images/img_02s.jpg" alt=""></li>
+              <li><img src="images/img_03s.jpg" alt=""></li>
+              <li><img src="images/img_04s.jpg" alt=""></li>
+              <li><img src="images/img_05s.jpg" alt=""></li>
+              <li><img src="images/img_06s.jpg" alt=""></li>
+              <li><img src="images/img_07s.jpg" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- slider end-->
+      <!-- book start-->
+      <div id="book" class="book">
+        <div class="container">
+          <h2 class="text--center">Забронируйте квартиру</h2>
+          <div class="row center-xs">
+            <div class="col-xs-4">
+              <div class="box-row">
+                <div class="book__element">
+				<a class="gallery_img" rel="group" href="images/plan/1.jpg"><img src="images/plan/1.jpg"></a>
+                  <h4> Однокомнатная квартира</h4>
+                  <p class="font--lg">от 32 т.р. за 1 м2</p><a href="#bookme" class="fancybox btn btn--danger" onclick="document.getElementById('flatInput').value = 'Однокомнатная'">Забронировать</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="box-row">
+                <div class="book__element">
+				<a class="gallery_img" rel="group" href="images/plan/2.jpg"><img src="images/plan/2.jpg"></a>
+                  <h4>Двухкомнатная квартира</h4>
+                  <p class="font--lg">от 31 т.р. за 1 м2</p><a href="#bookme" class="fancybox btn btn--danger" onclick="document.getElementById('flatInput').value = 'Двухкомнатная'">Забронировать</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="box-row">
+                <div class="book__element">
+				<a class="gallery_img" rel="group" href="images/plan/3.jpg"><img src="images/plan/3.jpg"></a>
+                  <h4>Трехкомнатная квартира</h4>
+                  <p class="font--lg">от 30 т.р. за 1 м2</p><a href="#bookme" class="fancybox btn btn--danger" onclick="document.getElementById('flatInput').value = 'Трехкомнатная'">Забронировать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row center-xs middle-xs">
+            <div class="col-xs">
+              <div class="book-row"><img src="images/icons/icons-pdf.png" class="padright20"></div>
+            </div>
+            <div class="col-xs">
+              <div class="book-row"><a href="#">Ознакомтесь с проектной деклорацией</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- book end-->
+      <!-- video start-->
+      <div id="video" class="video">
+        <div class="container">
+          <h2 class="text--center">Видео - презентация</h2>
+        <iframe width="100%" height="720"  src="https://www.youtube.com/embed/BnfToc8qBks" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <!-- video end-->
+      <!-- feedback start-->
+      <div class="feedback">
+        <div class="container">
+          <h2 class="text--center">Задайте вопрос специалисту</h2>
+          <form action="/sendMail.php" method="post" class="form-inline">
+            <div class="row center-xs around-xs">
+              <div class="col-xs-3 text--left">
+                <div class="box-row">
+                  <label>Имя:</label>
+                  <input type="text" class="form-control" name="name">
+                </div>
+              </div>
+              <div class="col-xs-3 text--left">
+                <div class="box-row">
+                  <label>Телефон:</label>
+                  <input type="text" class="validate-phone form-control" name="phone">
+                </div>
+              </div>
+              <div class="col-xs-3 text--left">
+                <div class="box-row">
+                  <label>Email:</label>
+                  <input type="email" class="form-control" name="email">
+				  <input type="hidden" class="form-control" name="question" value="1">
+                </div>
+              </div>
+              <div class="col-xs-8 text--left padtop50">
+                <label>Сообщение:</label>
+                <textarea rows="9" class="form-control" name="message"></textarea>
+              </div>
+              <div class="col-xs-12 padtop40"><input type="submit" class="btn btn--danger" value="Отправить"/></div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+	  <div id="thank" class="popup">
+      <div class="popup__header text--center">
+        <h3>Заявка оформлена.</h3><br/>
+		<h3>Мы с вами скоро свяжемся.</h3><br/>
+      </div>
+    </div>
+	<div id="error" class="popup">
+      <div class="popup__header text--center">
+        <h3>Произошла ошибка.</h3><br/>
+      </div>
+    </div>
+	<a href="#thank" id="thankHref" class="btn btn--primary fancybox"></a><a href="#error" id="errorHref" class="btn btn--primary fancybox"></a>
+      <!-- feedback end-->
+      <!-- map start-->
+      <div class="map">
+		<!--
+        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2325.4861967552906!2d48.59091300000001!3d54.348389000000026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x415d38b4ff888c51%3A0xbb7f8c9c5ab1b96a!2zOS3QuSDQmNC90LbQtdC90LXRgNC90YvQuSDQv9GALdC0LCAxOCwg0KPQu9GM0Y_QvdC-0LLRgdC6LCDQo9C70YzRj9C90L7QstGB0LrQsNGPINC-0LHQuy4sIDQzMjA3Mg!3m2!1d54.348389!2d48.590913!5e0!3m2!1sru!2sru!4v1441976958487" width="100%" height="788" frameborder="0" style="border:0" allowfullscreen>></iframe>
+		-->
+		<div id="map" style="width:100%; height: 788px;"></div>
+		<script type="text/javascript">
+		function initMap() {
+			var myLatLng =  new google.maps.LatLng(54.392764, 48.587195);
+
+
+		  // Create a map object and specify the DOM element for display.
+		  var map = new google.maps.Map(document.getElementById('map'), {
+			center: myLatLng,
+			scrollwheel: false,
+			zoom: 14
+		  });
+			var polygonCoords = [
+    {lat: 54.39467, lng: 48.58278},
+    {lat: 54.39615, lng: 48.58626},
+    {lat: 54.39239, lng: 48.59091},
+    {lat: 54.39091, lng: 48.58765}
+  ];
+		  // Create a marker and set its position.
+		  var polygon = new google.maps.Polygon({
+			paths: polygonCoords,
+				strokeColor: '#e84f49',
+				strokeOpacity: 0.8,
+				strokeWeight: 2,
+				fillColor: '#e84f49',
+				fillOpacity: 0.35
+		  });
+		  polygon.setMap(map);
+		}
+		$(document).ready(function(){
+			initMap();
+		});
+
+		</script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+      </div>
+    </main>
+    <footer role="contentinfo" class="site-footer">
+      <div class="container">
+        <nav role="navigation" class="navbar">
+          <ul class="nav navbar-nav pull-left">
+            <li class="nav__element"></li><a href="#benefits" class="nav__element-item">Преимущества</a>
+            <li class="nav__element"><a href="#gallery" class="nav__element-item">Галерея</a></li>
+            <li class="nav__element"><a href="#book" class="nav__element-item">Забронировать квартиру</a></li>
+            <li class="nav__element"><a href="#video" class="nav__element-item">Видео-презентация</a></li>
+          </ul><a href="#feedback" class="btn btn--primary pull-right fancybox">Обратный звонок</a>
+          <p class="padright20 padtop15 pull-right text--primary font--md"><b>8 (8422) 50 50 60</b></p>
+          <div class="clearfix"></div>
+        </nav>
+        <div class="copy">
+          <div class="row between-xs font--sm">
+            <div class="col-xs-8">
+              <p class="font--opacity">
+                © 2015 Все авторские права защищены. Любое копирование и использование
+                материалов,размещенных на сайте, возможно лишь с согласия правообладателя.
+              </p>
+            </div>
+            <div class="col-xs-3 text--right"><a href="www.alkodesign.ru" target="_blank" class="font--opacity">Разработка сайта</a><span class="font--opacity"> - АlkoDesign</span></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/backgroundVideo.js"></script>
+    <script src="scripts/scripts.js"></script>
+	<script>
+	window.onload = function(){$("a.gallery_img").fancybox();};
+
+    $(document).ready(function() {
+
+            $('#my-video').backgroundVideo({
+                pauseVideoOnViewLoss: false,
+                parallaxOptions: {
+                    effect: 0.9
+                }
+            });
+    });
+    </script>
+  </body>
+</html>
