@@ -1,2 +1,1 @@
 User-agent: *
-Host: noob-ui.ru
