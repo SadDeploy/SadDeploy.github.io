@@ -1,3 +1,2 @@
-# robotstxt.org/
-
 User-agent: *
+Host: noob-ui.ru
