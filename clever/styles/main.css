@@ -1456,3 +1456,7 @@ header {
 
 .padbot100 {
   padding-bottom: 100px; }
+
+.product-catalog-item img {
+  max-width: 118%;
+}
