@@ -7,29 +7,61 @@
 <!-- миксины-->
 <head>
   <meta charset="utf-8">
-  <title>Noob UI</title>
+  <title>Context</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="favicon.ico"><link rel="stylesheet" href="styles/main.css">
+  <link rel="shortcut icon" href="favicon.ico"><link rel="stylesheet" href="styles/vendor.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+  <div id="form" style="display:none;" class="form_feedback">
+    <h2 class="text--center text--uppercase margbot40">Оставить заявку</h2>
+    <div class="col-xs-12">
+      <form action="" method="post">
+        <div class="form-group input-group"><span class="input-group-addon"><i class="icon-user"></i></span>
+          <input type="text" placeholder="ФИО" class="form-control">
+        </div>
+        <div class="form-group input-group"><span class="input-group-addon"><i class="icon-phone"></i></span>
+          <input type="text" placeholder="+7" class="form-control">
+        </div>
+        <div class="form-group input-group"><span class="input-group-addon"><i class="icon-mail"></i></span>
+          <input type="email" placeholder="E-Mail" class="form-control">
+        </div>
+        <div class="form-group input-group"><span class="input-group-addon"><i class="icon-mail"></i></span>
+          <textarea placeholder="Сообщение" rows="4" class="form-control"></textarea>
+        </div>
+        <div class="form-group input-group">
+          <div class="checkbox">
+            <input type="checkbox" name="sign" id="sign">
+            <label for="sign">Подписаться на рассылку</label>
+          </div>
+        </div>
+        <div class="form-group capcha"><img src="images/capcha.jpg" alt=""></div>
+        <div class="form-group">
+          <input type="submit" value="Зарегистрироваться" class="btn btn--success btn--block">
+        </div>
+      </form>
+    </div>
+  </div>
   <header>
     <div class="header__top">
       <div class="container">
-        <div class="row between-xs middle-xs">
+        <div role="navigation" class="row between-xs middle-xs navbar anchor">
           <div class="col logo"><a href="/"><img src="images/logo.png" alt="Logo"></a></div>
-          <div class="col">
-            <nav role="navigation" class="navbar anchor hidden--xs visible-md">
-              <ul class="nav navbar-nav">
-                <li class="nav__element"><a href="#plans" class="nav__element-item">Цены</a></li>
-                <li class="nav__element"><a href="#reviews" class="nav__element-item">Отзывы</a></li>
-                <li class="nav__element"><a href="#projects" class="nav__element-item">Схема работы</a></li>
-                <li class="nav__element"><a href="#feedback" class="nav__element-item">Задать вопрос</a></li>
-              </ul>
+          <div class="col navigation">
+            <nav role="navigation" class="navbar anchor">
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                  <li class="nav__element"><a href="#plans" class="nav__element-item">Цены</a></li>
+                  <li class="nav__element"><a href="#reviews" class="nav__element-item">Отзывы</a></li>
+                  <li class="nav__element"><a href="#projects" class="nav__element-item">Схема работы</a></li>
+                  <li class="nav__element"><a href="#feedback" class="nav__element-item">Задать вопрос</a></li>
+                </ul>
+              </div>
             </nav>
           </div>
           <div class="col phone"><a href="tel:88003333333" class="text--info"><i class="icon-phone text--success"></i> 8 (800) 333-33-33</a></div>
-          <div class="col"><a href="#"><img src="images/state.png" alt="State"></a></div>
+          <div class="col"><a href="#" data-toggle="collapse" data-target=".navbar-ex1-collapse" class="navbar-toggle"><img src="images/state.png" alt="State"></a></div>
         </div>
       </div>
     </div>
@@ -58,7 +90,7 @@
                 </div>
                 <p class="reasons__text text--sm">Если мы не достигнем<span> показателей, указанных в</span><span> нашем прогнозе, мы вернем</span><span> вам деньги за настройку</span></p>
               </div>
-            </div><a hrfe="#" class="btn btn--success">Оставить заявку</a>
+            </div><a href="#form" class="btn btn--success fancybox">Оставить заявку</a>
           </div>
           <div class="background__photo-1 hidden--xs visible-md"><img src="images/background__girl.png" alt=""></div>
         </div>
@@ -178,7 +210,19 @@
     </div>
     <div class="results text--center">
       <div class="container">
-        <h2 class="margbot50">Посмотрите, как росли их продажи!</h2><img src="images/notebook.png" alt="">
+        <h2 class="margbot50">Посмотрите, как росли их продажи!</h2>
+        <div class="tabs">
+          <div class="tabs_inner">
+            <ul class="tabs__caption list--inline">
+              <li class="active">Целевые посетители</li>
+              <li>Целевые визиты</li>
+              <li>Источники трафика</li>
+            </ul>
+            <div class="tabs__content active"><img src="images/graph_1.png" alt=""></div>
+            <div class="tabs__content"><img src="images/graph_2.png" alt=""></div>
+            <div class="tabs__content"><img src="images/graph_3.png" alt=""></div>
+          </div><img src="images/notebook.png" alt="" class="tabs_inner-img">
+        </div>
         <h2 class="results__title reasons__text">Хотите узнать, каких результатов<span> вы можете добиться с нами?</span></h2>
         <p class="margbot50 reasons__text">Закажите бесплатный прогноз по контекстной рекламе и наш менеджер<span> скурпулезно просчитает, сколько  клиентов в вашем бизнесе</span><span> и по какой цене вы можете получить с контекстной рекламы</span></p><a href="#" class="btn btn--danger"><i class="icon-chart-line-1 icon-lg"></i>заказать прогноз</a>
       </div>
@@ -434,5 +478,6 @@
       </div>
     </div>
   </footer><script src="scripts/vendor.js"></script>
+  <script src="scripts/plugins.js"></script>
   <script src="scripts/main.js"></script>
 </body></html>

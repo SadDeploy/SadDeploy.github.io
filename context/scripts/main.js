@@ -29,6 +29,21 @@ $(window).load(function () {
     //    });
     //});
 
+    $(".fancybox").fancybox({
+        maxWidth: 523,
+        maxHeight: 744,
+        width: '70%',
+        height: '70%'
+    });
+
+    (function ($) {
+        $(function () {
+            $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
+                $(this).addClass('active').siblings().removeClass('active').closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+            });
+        });
+    })(jQuery);
+
     function initMap() {
         var myLatLng = new google.maps.LatLng(56.994355, 40.9750783);
         // Create a map object and specify the DOM element for display.
