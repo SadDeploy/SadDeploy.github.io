@@ -129,9 +129,11 @@
   <header>
     <div class="header__top">
       <div class="container">
-        <div role="navigation" class="row between-xs middle-xs navbar anchor">
+        <div role="navigation" class="row between-xs top-xs navbar anchor">
           <div class="col logo"><a href="#top"><img src="images/logo.png" alt="Logo" class="hidden--xs visible-md visible-lg"><img src="images/logo_mobile.png" alt="Logo" class="visible--xs hidden--sm hidden--md hidden--lg"></a></div>
-          <div class="col visible-xs hidden--md hidden--lg"><a href="#" data-toggle="collapse" data-target=".navbar-ex1-collapse" class="navbar-toggle"><img src="images/state.png" alt="State"></a></div>
+          <!--.col.visible-xs.hidden--md.hidden--lg-->
+          <!--    a.navbar-toggle(href="#", data-toggle='collapse', data-target='.navbar-ex1-collapse')-->
+          <!--        img(src="images/state.png", alt="State")-->
           <div class="col navigation">
             <nav role="navigation" class="navbar anchor">
               <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -141,11 +143,12 @@
                   <li class="nav__element"><a href="#projects" class="nav__element-item">Схема работы</a></li>
                   <li class="nav__element"><a href="#feedback" class="nav__element-item">Задать вопрос</a></li>
                 </ul>
+                <div class="phone hidden--md hidden--lg text--center"><a href="tel:88003333333" class="text--info"><i class="icon-phone text--success"></i> 8 (800) 333-33-33</a></div>
               </div>
             </nav>
           </div>
           <div class="col phone hidden--xs visible-md visible-lg"><a href="tel:88003333333"><i class="icon-phone text--success"></i> 8 (800) 333-33-33</a></div>
-          <div class="col hidden--xs visible-md hidden-lg"><a href="#" data-toggle="collapse" data-target=".navbar-ex1-collapse" class="navbar-toggle"><img src="images/state.png" alt="State"></a></div>
+          <div class="col visible--xs hidden-md hidden-lg"><a data-toggle="collapse" data-target=".navbar-ex1-collapse" class="navbar-toggle"><img src="images/state.png" alt="State"></a></div>
         </div>
       </div>
     </div>

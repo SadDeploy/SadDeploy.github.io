@@ -225,10 +225,6 @@ p {
   display: none;
 }
 
-.visible-xs {
-  display: block;
-}
-
 @media (min-width: 480px) {
   .hidden--xs {
     display: none;
@@ -282,6 +278,11 @@ p {
 
 .text--info {
   color: #a5a5a5;
+}
+
+a.text--info:hover,
+a.text--info:focus {
+  color: #8b8b8b;
 }
 
 .text--danger {
@@ -864,7 +865,7 @@ input.form-control {
 }
 
 .navbar-nav {
-  margin: 7.25px -15px;
+  margin: 0 -15px;
   text-align: center;
 }
 
@@ -931,6 +932,7 @@ input.form-control {
   right: 0;
   top: 0;
   z-index: 10;
+  height: 65px;
 }
 
 .header__bottom {
@@ -953,6 +955,7 @@ input.form-control {
   font-family: "Open Sans Condensed";
   font-size: 21px;
   font-weight: 700;
+  padding: 4px;
 }
 
 .phone a {
@@ -1178,7 +1181,7 @@ footer {
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .8em;
+  margin-right: .5em;
   text-align: center;
   font-variant: normal;
   text-transform: none;
@@ -1459,9 +1462,31 @@ footer {
   .reasons__text b {
     display: none;
   }
+
+  .navigation {
+    position: absolute;
+    top: 47px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #282828;
+  }
+
+  .navigation .nav__element-item {
+    padding: 14px 10px 15px;
+  }
+
+  .navigation .nav__element-item:hover {
+    text-decoration: none;
+    background-color: #303030;
+  }
 }
 
 @media (max-width: 768px) {
+  .header__top {
+    padding: 12px 0;
+  }
+
   .tabs_inner {
     padding-top: 9%;
   }
@@ -1473,10 +1498,6 @@ footer {
   .tabs__caption li {
     font-size: 11px;
     display: block;
-  }
-
-  .navigation {
-    width: 100%;
   }
 
   .col-xs-12:not(:last-child) .projects-elem {
@@ -1497,6 +1518,21 @@ footer {
 
   .plan__tier-body li {
     height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation {
+    width: 110%;
+    margin-left: -16px;
+  }
+
+  .phone {
+    padding: 10px;
+  }
+
+  .phone a {
+    color: #a5a5a5;
   }
 }
 
@@ -1727,10 +1763,6 @@ p {
   display: none;
 }
 
-.visible-xs {
-  display: block;
-}
-
 @media (min-width: 480px) {
   .hidden--xs {
     display: none;
@@ -1784,6 +1816,11 @@ p {
 
 .text--info {
   color: #a5a5a5;
+}
+
+a.text--info:hover,
+a.text--info:focus {
+  color: #8c8c8c;
 }
 
 .text--danger {
@@ -2386,7 +2423,7 @@ input.form-control {
 }
 
 .navbar-nav {
-  margin: 7.25px -15px;
+  margin: 0 -15px;
   text-align: center;
 }
 
@@ -2453,6 +2490,7 @@ input.form-control {
   right: 0;
   top: 0;
   z-index: 10;
+  height: 65px;
 }
 
 .header__bottom {
@@ -2475,6 +2513,7 @@ input.form-control {
   font-family: "Open Sans Condensed";
   font-size: 21px;
   font-weight: 700;
+  padding: 4px;
 }
 
 .phone a {
@@ -2700,7 +2739,7 @@ footer {
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .8em;
+  margin-right: .5em;
   text-align: center;
   font-variant: normal;
   text-transform: none;
@@ -2981,9 +3020,31 @@ stretchRight
   .reasons__text b {
     display: none;
   }
+
+  .navigation {
+    position: absolute;
+    top: 47px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #282828;
+  }
+
+  .navigation .nav__element-item {
+    padding: 14px 10px 15px;
+  }
+
+  .navigation .nav__element-item:hover {
+    text-decoration: none;
+    background-color: #303030;
+  }
 }
 
 @media (max-width: 768px) {
+  .header__top {
+    padding: 12px 0;
+  }
+
   .tabs_inner {
     padding-top: 9%;
   }
@@ -2995,10 +3056,6 @@ stretchRight
   .tabs__caption li {
     font-size: 11px;
     display: block;
-  }
-
-  .navigation {
-    width: 100%;
   }
 
   .col-xs-12:not(:last-child) .projects-elem {
@@ -3019,6 +3076,21 @@ stretchRight
 
   .plan__tier-body li {
     height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation {
+    width: 110%;
+    margin-left: -16px;
+  }
+
+  .phone {
+    padding: 10px;
+  }
+
+  .phone a {
+    color: #a5a5a5;
   }
 }
 
