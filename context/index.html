@@ -44,7 +44,8 @@
         </div>
       </form>
     </div>
-    <div id="form_order" style="display:none;" class="form_feedback"></div>
+  </div>
+  <div id="form_order" style="display:none;" class="form_feedback">
     <h2 class="text--center margbot40">Заказать прогноз</h2>
     <div class="col-xs-12">
       <form action="form.php" method="post">
@@ -60,12 +61,10 @@
         <div class="form-group input-group"><span class="input-group-addon"><i class="icon-mail"></i></span>
           <textarea placeholder="Сообщение" rows="4" name="message1" class="form-control"></textarea>
         </div>
-        <div class="form-group input-group">
-          <div class="checkbox">
-            <input type="checkbox" name="sign1" id="sign1">
-            <label for="sign1">Подписаться на рассылку</label>
-          </div>
-        </div>
+        <!--.form-group.input-group-->
+        <!--    .checkbox-->
+        <!--        input(type="checkbox", name="sign1", id="sign1")-->
+        <!--        label(for="sign1") Подписаться на рассылку-->
         <!--.form-group.capcha-->
         <!--    .g-recaptcha(data-sitekey="6LfrrxATAAAAAL14RZHhyLJLfHc1gtwSceTkrg-w")-->
         <div class="form-group">
@@ -73,57 +72,57 @@
         </div>
       </form>
     </div>
-    <div id="form_sale" style="display:none;" class="form_feedback">
-      <h2 class="text--center margbot40">Оставить заявку</h2>
-      <div class="col-xs-12">
-        <form action="" method="post">
-          <div class="form-group input-group"><span class="input-group-addon"><i class="icon-user"></i></span>
-            <input type="text" placeholder="ФИО" name="name2" class="form-control">
+  </div>
+  <div id="form_sale" style="display:none;" class="form_feedback">
+    <h2 class="text--center margbot40">Оставить заявку</h2>
+    <div class="col-xs-12">
+      <form action="" method="post">
+        <div class="form-group input-group"><span class="input-group-addon"><i class="icon-user"></i></span>
+          <input type="text" placeholder="ФИО" name="name2" class="form-control">
+        </div>
+        <div class="form-group input-group"><span class="input-group-addon"><i class="icon-phone"></i></span>
+          <input type="text" placeholder="+7" name="phone2" class="form-control">
+        </div>
+        <div class="form-group input-group"><span class="input-group-addon"><i class="icon-mail"></i></span>
+          <input type="email" placeholder="E-Mail" name="mail2" class="form-control">
+        </div>
+        <div class="form-group input-group"><span class="input-group-addon"><i class="icon-mail"></i></span>
+          <textarea placeholder="Сообщение" rows="4" name="message2" class="form-control"></textarea>
+        </div>
+        <div class="form-group input-group">
+          <div class="checkbox">
+            <input type="checkbox" name="sign2" id="sign2">
+            <label for="sign2">Подписаться на рассылку</label>
           </div>
-          <div class="form-group input-group"><span class="input-group-addon"><i class="icon-phone"></i></span>
-            <input type="text" placeholder="+7" name="phone2" class="form-control">
+        </div>
+        <div class="form-group input-group">
+          <div class="radio">
+            <input type="radio" name="check2" id="check2" checked>
+            <label for="check2">Получить скидку на ведение</label>
           </div>
-          <div class="form-group input-group"><span class="input-group-addon"><i class="icon-mail"></i></span>
-            <input type="email" placeholder="E-Mail" name="mail2" class="form-control">
-          </div>
-          <div class="form-group input-group"><span class="input-group-addon"><i class="icon-mail"></i></span>
-            <textarea placeholder="Сообщение" rows="4" name="message2" class="form-control"></textarea>
-          </div>
-          <div class="form-group input-group">
-            <div class="checkbox">
-              <input type="checkbox" name="sign2" id="sign2">
-              <label for="sign2">Подписаться на рассылку</label>
-            </div>
-          </div>
-          <div class="form-group input-group">
-            <div class="radio">
-              <input type="radio" name="check2" id="check2" checked>
-              <label for="check2">Получить скидку на ведение</label>
-            </div>
-          </div>
-          <!--.form-group.capcha-->
-          <!--    .g-recaptcha(data-sitekey="6LfrrxATAAAAAL14RZHhyLJLfHc1gtwSceTkrg-w")-->
-          <div class="form-group">
-            <input type="submit" value="Оставить заявку" class="btn btn--success btn--block">
-          </div>
-        </form>
-      </div>
+        </div>
+        <!--.form-group.capcha-->
+        <!--    .g-recaptcha(data-sitekey="6LfrrxATAAAAAL14RZHhyLJLfHc1gtwSceTkrg-w")-->
+        <div class="form-group">
+          <input type="submit" value="Оставить заявку" class="btn btn--success btn--block">
+        </div>
+      </form>
     </div>
-    <div id="call" style="display:none;" class="form_feedback">
-      <h2 class="text--center margbot40">Заказать звонок</h2>
-      <div class="col-xs-12">
-        <form action="" method="post">
-          <div class="form-group input-group"><span class="input-group-addon"><i class="icon-user"></i></span>
-            <input type="text" placeholder="ФИО" required name="name3" class="form-control">
-          </div>
-          <div class="form-group input-group"><span class="input-group-addon"><i class="icon-phone"></i></span>
-            <input type="text" placeholder="+7" required name="phone3" class="form-control">
-          </div>
-          <div class="form-group">
-            <input type="submit" value="Заказать" class="btn btn--success btn--block">
-          </div>
-        </form>
-      </div>
+  </div>
+  <div id="call" style="display:none;" class="form_feedback">
+    <h2 class="text--center margbot40">Заказать звонок</h2>
+    <div class="col-xs-12">
+      <form action="" method="post">
+        <div class="form-group input-group"><span class="input-group-addon"><i class="icon-user"></i></span>
+          <input type="text" placeholder="ФИО" required name="name3" class="form-control">
+        </div>
+        <div class="form-group input-group"><span class="input-group-addon"><i class="icon-phone"></i></span>
+          <input type="text" placeholder="+7" required name="phone3" class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Заказать" class="btn btn--success btn--block">
+        </div>
+      </form>
     </div>
   </div>
   <header>
@@ -322,7 +321,7 @@
           </div><img src="images/notebook.png" alt="" class="tabs_inner-img">
         </div>
         <h2 class="results__title reasons__text">Хотите узнать, каких результатов<span> вы можете добиться с нами?</span></h2>
-        <p class="margbot50 reasons__text">Закажите бесплатный прогноз по контекстной рекламе и наш менеджер<span> скурпулезно просчитает, сколько  клиентов в вашем бизнесе</span><span> и по какой цене вы можете получить с контекстной рекламы</span></p><a href="#" class="btn btn--danger"><i class="icon-chart-line-1 icon-lg"></i>заказать прогноз</a>
+        <p class="margbot50 reasons__text">Закажите бесплатный прогноз по контекстной рекламе и наш менеджер<span> скурпулезно просчитает, сколько  клиентов в вашем бизнесе</span><span> и по какой цене вы можете получить с контекстной рекламы</span></p><a href="#form_order" class="btn btn--danger fancybox"><i class="icon-chart-line-1 icon-lg"></i>заказать прогноз</a>
       </div>
     </div>
     <div id="plans" class="plans text--center">
