@@ -12,42 +12,126 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico"><link rel="stylesheet" href="styles/vendor.css">
   <link rel="stylesheet" href="styles/main.css">
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
   <div id="form" style="display:none;" class="form_feedback">
-    <h2 class="text--center text--uppercase margbot40">Оставить заявку</h2>
+    <h2 class="text--center margbot40">Оставить заявку</h2>
     <div class="col-xs-12">
-      <form action="" method="post">
+      <form action="form.php" method="post">
         <div class="form-group input-group"><span class="input-group-addon"><i class="icon-user"></i></span>
-          <input type="text" placeholder="ФИО" class="form-control">
+          <input type="text" placeholder="ФИО" name="name1" class="form-control">
         </div>
         <div class="form-group input-group"><span class="input-group-addon"><i class="icon-phone"></i></span>
-          <input type="text" placeholder="+7" class="form-control">
+          <input type="text" placeholder="+7" name="phone1" class="form-control">
         </div>
         <div class="form-group input-group"><span class="input-group-addon"><i class="icon-mail"></i></span>
-          <input type="email" placeholder="E-Mail" class="form-control">
+          <input type="email" placeholder="E-Mail" name="mail1" class="form-control">
         </div>
         <div class="form-group input-group"><span class="input-group-addon"><i class="icon-mail"></i></span>
-          <textarea placeholder="Сообщение" rows="4" class="form-control"></textarea>
+          <textarea placeholder="Сообщение" rows="4" name="message1" class="form-control"></textarea>
         </div>
         <div class="form-group input-group">
           <div class="checkbox">
-            <input type="checkbox" name="sign" id="sign">
-            <label for="sign">Подписаться на рассылку</label>
+            <input type="checkbox" name="sign1" id="sign1">
+            <label for="sign1">Подписаться на рассылку</label>
           </div>
         </div>
-        <div class="form-group capcha"><img src="images/capcha.jpg" alt=""></div>
+        <!--.form-group.capcha-->
+        <!--    .g-recaptcha(data-sitekey="6LfrrxATAAAAAL14RZHhyLJLfHc1gtwSceTkrg-w")-->
         <div class="form-group">
-          <input type="submit" value="Зарегистрироваться" class="btn btn--success btn--block">
+          <input type="submit" value="Оставить заявку" class="btn btn--success btn--block">
         </div>
       </form>
+    </div>
+    <div id="form_order" style="display:none;" class="form_feedback"></div>
+    <h2 class="text--center margbot40">Заказать прогноз</h2>
+    <div class="col-xs-12">
+      <form action="form.php" method="post">
+        <div class="form-group input-group"><span class="input-group-addon"><i class="icon-user"></i></span>
+          <input type="text" placeholder="ФИО" name="name1" class="form-control">
+        </div>
+        <div class="form-group input-group"><span class="input-group-addon"><i class="icon-phone"></i></span>
+          <input type="text" placeholder="+7" name="phone1" class="form-control">
+        </div>
+        <div class="form-group input-group"><span class="input-group-addon"><i class="icon-mail"></i></span>
+          <input type="email" placeholder="E-Mail" name="mail1" class="form-control">
+        </div>
+        <div class="form-group input-group"><span class="input-group-addon"><i class="icon-mail"></i></span>
+          <textarea placeholder="Сообщение" rows="4" name="message1" class="form-control"></textarea>
+        </div>
+        <div class="form-group input-group">
+          <div class="checkbox">
+            <input type="checkbox" name="sign1" id="sign1">
+            <label for="sign1">Подписаться на рассылку</label>
+          </div>
+        </div>
+        <!--.form-group.capcha-->
+        <!--    .g-recaptcha(data-sitekey="6LfrrxATAAAAAL14RZHhyLJLfHc1gtwSceTkrg-w")-->
+        <div class="form-group">
+          <input type="submit" value="Заказать" class="btn btn--success btn--block">
+        </div>
+      </form>
+    </div>
+    <div id="form_sale" style="display:none;" class="form_feedback">
+      <h2 class="text--center margbot40">Оставить заявку</h2>
+      <div class="col-xs-12">
+        <form action="" method="post">
+          <div class="form-group input-group"><span class="input-group-addon"><i class="icon-user"></i></span>
+            <input type="text" placeholder="ФИО" name="name2" class="form-control">
+          </div>
+          <div class="form-group input-group"><span class="input-group-addon"><i class="icon-phone"></i></span>
+            <input type="text" placeholder="+7" name="phone2" class="form-control">
+          </div>
+          <div class="form-group input-group"><span class="input-group-addon"><i class="icon-mail"></i></span>
+            <input type="email" placeholder="E-Mail" name="mail2" class="form-control">
+          </div>
+          <div class="form-group input-group"><span class="input-group-addon"><i class="icon-mail"></i></span>
+            <textarea placeholder="Сообщение" rows="4" name="message2" class="form-control"></textarea>
+          </div>
+          <div class="form-group input-group">
+            <div class="checkbox">
+              <input type="checkbox" name="sign2" id="sign2">
+              <label for="sign2">Подписаться на рассылку</label>
+            </div>
+          </div>
+          <div class="form-group input-group">
+            <div class="radio">
+              <input type="radio" name="check2" id="check2" checked>
+              <label for="check2">Получить скидку на ведение</label>
+            </div>
+          </div>
+          <!--.form-group.capcha-->
+          <!--    .g-recaptcha(data-sitekey="6LfrrxATAAAAAL14RZHhyLJLfHc1gtwSceTkrg-w")-->
+          <div class="form-group">
+            <input type="submit" value="Оставить заявку" class="btn btn--success btn--block">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="call" style="display:none;" class="form_feedback">
+      <h2 class="text--center margbot40">Заказать звонок</h2>
+      <div class="col-xs-12">
+        <form action="" method="post">
+          <div class="form-group input-group"><span class="input-group-addon"><i class="icon-user"></i></span>
+            <input type="text" placeholder="ФИО" required name="name3" class="form-control">
+          </div>
+          <div class="form-group input-group"><span class="input-group-addon"><i class="icon-phone"></i></span>
+            <input type="text" placeholder="+7" required name="phone3" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Заказать" class="btn btn--success btn--block">
+          </div>
+        </form>
+      </div>
     </div>
   </div>
   <header>
     <div class="header__top">
       <div class="container">
         <div role="navigation" class="row between-xs middle-xs navbar anchor">
-          <div class="col logo"><a href="/"><img src="images/logo.png" alt="Logo"></a></div>
+          <div class="col logo"><a href="#top"><img src="images/logo.png" alt="Logo" class="hidden--xs visible-md visible-lg"><img src="images/logo_mobile.png" alt="Logo" class="visible--xs hidden--sm hidden--md hidden--lg"></a></div>
+          <div class="col visible-xs hidden--md hidden--lg"><a href="#" data-toggle="collapse" data-target=".navbar-ex1-collapse" class="navbar-toggle"><img src="images/state.png" alt="State"></a></div>
           <div class="col navigation">
             <nav role="navigation" class="navbar anchor">
               <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -60,15 +144,15 @@
               </div>
             </nav>
           </div>
-          <div class="col phone"><a href="tel:88003333333" class="text--info"><i class="icon-phone text--success"></i> 8 (800) 333-33-33</a></div>
-          <div class="col"><a href="#" data-toggle="collapse" data-target=".navbar-ex1-collapse" class="navbar-toggle"><img src="images/state.png" alt="State"></a></div>
+          <div class="col phone hidden--xs visible-md visible-lg"><a href="tel:88003333333"><i class="icon-phone text--success"></i> 8 (800) 333-33-33</a></div>
+          <div class="col hidden--xs visible-md hidden-lg"><a href="#" data-toggle="collapse" data-target=".navbar-ex1-collapse" class="navbar-toggle"><img src="images/state.png" alt="State"></a></div>
         </div>
       </div>
     </div>
-    <div class="header__bottom">
+    <div id="top" class="header__bottom">
       <div class="container p-relative">
         <div class="row between-xs middle-xs margbot50">
-          <div class="col-xs-12 col-md-9 index">
+          <div class="col-xs-12 col-md-8 index">
             <h1>Экономьте до 64%<br>на контекстной рекламе</h1>
             <p class="text--md">и заберите своих клиентов раньше конкурентов</p>
             <div class="row between-xs top-xs margtop60 margbot40">
@@ -76,19 +160,19 @@
                 <div class="reasons__title middle-xs row"><img src="images/reasons__ico-1.png" alt="">
                   <h3>Максимум<span> заказов</span></h3>
                 </div>
-                <p class="reasons__text text--sm">Передовая настрой карекламы<span> находит в Интернете вообще</span><span> всех людей, которым интересен</span><span> ваш товар. Даже если они об</span><span> этом еще не знают</span></p>
+                <p class="reasons__text text--sm">Передовая настройка рекламы<span> находит в Интернете вообще</span><span> всех людей, которым интересен</span><span> ваш товар. Даже если они об</span><span> этом еще не знают</span></p>
               </div>
               <div class="col-xs-12 col-lg-4">
                 <div class="reasons__title middle-xs row"><img src="images/reasons__ico-2.png" alt="">
                   <h3>Максимум<span> прибыли</span></h3>
                 </div>
-                <p class="reasons__text text--sm">Глубокая веб-аналитика и продви<span> нутая оптимизация кампаний</span><span> позволяют отшлифовать рекламу</span><span> до выхода на макисмально воз</span><span> можную рентабельность рекламы</span></p>
+                <p class="reasons__text text--sm">Глубокая веб-аналитика и продви<b>-</b><span> нутая оптимизация кампаний</span><span> позволяют отшлифовать рекламу</span><span> до выхода на макисмально воз<b>-</b></span><span> можную рентабельность рекламы</span></p>
               </div>
               <div class="col-xs-12 col-lg-4">
                 <div class="reasons__title middle-xs row"><img src="images/reasons__ico-3.png" alt="">
                   <h3>Гарантия<span> результата</span></h3>
                 </div>
-                <p class="reasons__text text--sm">Если мы не достигнем<span> показателей, указанных в</span><span> нашем прогнозе, мы вернем</span><span> вам деньги за настройку</span></p>
+                <p class="reasons__text text--sm">Если мы не достигнем<span> показателей, указанных</span><span> в нашем прогнозе, мы</span><span> вернем вам</span><span> деньги за настройку</span></p>
               </div>
             </div><a href="#form" class="btn btn--success fancybox">Оставить заявку</a>
           </div>
@@ -130,7 +214,7 @@
             <p class="text--sm">Построение бренда, не меняя концепции, изложенной выше, сознательно усиливает стратегический рекламный бриф, опираясь на опыт</p>
           </div>
         </div>
-        <div class="text--center margtop30"><a href="#" class="btn btn--success"><i class="icon-phone icon-lg"></i>заказать звонок</a></div>
+        <div class="text--center margtop30"><a href="#call" class="btn btn--success fancybox"><i class="icon-phone icon-lg"></i>заказать звонок</a></div>
       </div>
     </div>
     <div id="reviews" class="reviews">
@@ -143,12 +227,17 @@
               <p class="margleft10">Ирина Гусева<span class="text--info"> предприниматель</span><br>Бизнес: оптовая продажа текстиля</p>
             </div>
             <div class="col-md-5 col-xs-12">
-              <ul class="list--inline">
-                <li><a href="#"><img src="icons/vk.png" alt=""></a></li>
-                <li><a href="#"><img src="icons/google.png" alt=""></a></li>
-                <li><a href="#"><img src="icons/twitter.png" alt=""></a></li>
-                <li class="middle">Свяжитесь с Ирой</li>
-              </ul>
+              <!--ul.list--inline-->
+              <!--    li-->
+              <!--        a(href="#")-->
+              <!--            img(src="icons/vk.png", alt="")-->
+              <!--    li-->
+              <!--        a(href="#")-->
+              <!--            img(src="icons/google.png", alt="")-->
+              <!--    li-->
+              <!--        a(href="#")-->
+              <!--            img(src="icons/twitter.png", alt="")-->
+              <!--    li.middle Свяжитесь с Ирой-->
             </div>
             <h2 class="text--success text--left">«Заказов стало больше, чем можем обработать!»</h2>
             <div class="col-md-7 col-xs-12">
@@ -158,7 +247,7 @@
               </p>
             </div>
             <div class="col-md-1">&nbsp;</div>
-            <div class="col-md-4 col-xs-12"><a href="#" class="btn btn--danger btn--block">Хочу так же!</a></div>
+            <div class="col-md-4 col-xs-12"><a href="#form" class="btn btn--danger btn--block fancybox">Хочу так же!</a></div>
           </div>
         </div>
         <div class="reviews-element">
@@ -168,19 +257,24 @@
               <p class="margleft10">Валентин Александров<span class="text--info"> маркетолог</span><br>Бизнес: сеть ресторанов быстрого питания</p>
             </div>
             <div class="col-md-5 col-xs-12">
-              <ul class="list--inline">
-                <li><a href="#"><img src="icons/facebook.png" alt=""></a></li>
-                <li><a href="#"><img src="icons/youtube.png" alt=""></a></li>
-                <li><a href="#"><img src="icons/odnoklassniki.png" alt=""></a></li>
-                <li class="middle">Свяжитесь с Валентином</li>
-              </ul>
+              <!--ul.list--inline-->
+              <!--    li-->
+              <!--        a(href="#")-->
+              <!--            img(src="icons/facebook.png", alt="")-->
+              <!--    li-->
+              <!--        a(href="#")-->
+              <!--            img(src="icons/youtube.png", alt="")-->
+              <!--    li-->
+              <!--        a(href="#")-->
+              <!--            img(src="icons/odnoklassniki.png", alt="")-->
+              <!--    li.middle Свяжитесь с Валентином-->
             </div>
             <h2 class="text--success text--left">«Приятно работать с профессионалами!»</h2>
             <div class="col-md-7 col-xs-12">
               <p>SWOT-анализ, анализируя результаты рекламной кампании, искажает комплексный департамент маркетинга и продаж, используя опыт предыдущих кампаний. Социальный статус обычно правомочен.</p>
             </div>
             <div class="col-md-1">&nbsp;</div>
-            <div class="col-md-4 col-xs-12"><a href="#" class="btn btn--danger btn--block">Хочу так же!</a></div>
+            <div class="col-md-4 col-xs-12"><a href="#form" class="btn btn--danger btn--block fancybox">Хочу так же!</a></div>
           </div>
         </div>
         <div class="reviews-element">
@@ -190,10 +284,11 @@
               <p class="margleft10">Владимир Воскобойников<span class="text--info"> директор компании</span><br>Бизнес: охранное агентство</p>
             </div>
             <div class="col-md-5 col-xs-12">
-              <ul class="list--inline">
-                <li><a href="#"><img src="icons/vk.png" alt=""></a></li>
-                <li class="middle">Свяжитесь с Владимиром</li>
-              </ul>
+              <!--ul.list--inline-->
+              <!--    li-->
+              <!--        a(href="#")-->
+              <!--            img(src="icons/vk.png", alt="")-->
+              <!--    li.middle Свяжитесь с Владимиром-->
             </div>
             <h2 class="text--success text--left">«Доверился — и не пожалел»</h2>
             <div class="col-md-7 col-xs-12">
@@ -203,7 +298,7 @@
               </p>
             </div>
             <div class="col-md-1">&nbsp;</div>
-            <div class="col-md-4 col-xs-12"><a href="#" class="btn btn--danger btn--block">Хочу так же!</a></div>
+            <div class="col-md-4 col-xs-12"><a href="#form" class="btn btn--danger btn--block fancybox">Хочу так же!</a></div>
           </div>
         </div>
       </div>
@@ -230,8 +325,8 @@
     <div id="plans" class="plans text--center">
       <div class="container">
         <h2 class="margbot50">Выберите тарифный план</h2>
-        <div class="row between-xs top-xs">
-          <section class="col-md-3 col-sm-6 col-xs-12">
+        <div class="row between-xs top-xs margbot20">
+          <section class="col-lg-3 col-sm-6 col-xs-12 visible-md visible-lg hidden--xs">
             <div class="plan__tier-main text--left">
               <h5>&nbsp;</h5>
               <ul class="list--unstyled">
@@ -255,24 +350,24 @@
               </ul>
             </div>
           </section>
-          <section class="col-md-3 col-sm-6 col-xs-12">
+          <section class="col-lg-3 col-sm-6 col-xs-12">
             <div class="plan__tier text--center margleft10 margright10">
-              <div class="plan__tier-header">
+              <div class="plan__tier-header scroll">
                 <h5 class="text--uppercase">Продвинутый</h5>
               </div>
               <div class="plan__tier-body">
                 <ul class="list--unstyled">
-                  <li>Яндекс и Google</li>
-                  <li>Неограничено</li>
-                  <li><i class="icon-ok text--success icon-2x"></i></li>
-                  <li><i class="icon-ok text--success icon-2x"></i></li>
-                  <li><i class="icon-ok text--success icon-2x"></i></li>
-                  <li><i class="icon-ok text--success icon-2x"></i></li>
-                  <li>Яндекс. Метрика и Google Analytics</li>
-                  <li>В Яндекс. Директ и Google AdWords</li>
-                  <li><i class="icon-ok text--success icon-2x"></i></li>
-                  <li><i class="icon-ok text--success icon-2x"></i></li>
-                  <li>60 дней</li>
+                  <li><span class="text--info hidden--md hidden--lg">Реклама в системах<br></span> Яндекс и Google</li>
+                  <li><span class="text--info hidden--md hidden--lg">Ключевых слов<br></span> Неограничено</li>
+                  <li><span class="text--info hidden--md hidden--lg">Создание уникального торгового предложения<br></span><i class="icon-ok text--success icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Аудит сайта<br></span><i class="icon-ok text--success icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Тестирование текстов<br></span><i class="icon-ok text--success icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Индивидуальный заголовок для ключей<br></span><i class="icon-ok text--success icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Настройка систем аналитики под ключ<br></span> Яндекс. Метрика и Google Analytics</li>
+                  <li><span class="text--info hidden--md hidden--lg">Ретаргетинг<br></span> В Яндекс. Директ и Google AdWords</li>
+                  <li><span class="text--info hidden--md hidden--lg">Околоцелевые кампании<br></span><i class="icon-ok text--success icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Персональный менеджер<br></span><i class="icon-ok text--success icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Ведение<br></span> 60 дней</li>
                 </ul>
               </div>
               <div class="plan__tier-footer">
@@ -281,24 +376,24 @@
               </div>
             </div>
           </section>
-          <section class="col-md-3 col-sm-6 col-xs-12">
+          <section class="col-lg-3 col-sm-6 col-xs-12">
             <div class="plan__tier text--center margleft10 margright10">
-              <div class="plan__tier-header">
+              <div class="plan__tier-header scroll">
                 <h5 class="text--uppercase">Профессиональный</h5>
               </div>
               <div class="plan__tier-body">
                 <ul class="list--unstyled">
-                  <li>Яндекс и Google</li>
-                  <li>До 1 000</li>
-                  <li><i class="icon-cancel text--danger icon-2x"></i></li>
-                  <li><i class="icon-ok text--success icon-2x"></i></li>
-                  <li><i class="icon-ok text--success icon-2x"></i></li>
-                  <li><i class="icon-ok text--success icon-2x"></i></li>
-                  <li>Яндекс. Метрика<br><br></li>
-                  <li>В Яндекс. Директ<br></li>
-                  <li><i class="icon-cancel text--danger icon-2x"></i></li>
-                  <li><i class="icon-cancel text--danger icon-2x"></i></li>
-                  <li>8 дней</li>
+                  <li><span class="text--info hidden--md hidden--lg">Реклама в системах<br></span> Яндекс и Google</li>
+                  <li><span class="text--info hidden--md hidden--lg">Ключевых слов<br></span> До 1 000</li>
+                  <li><span class="text--info hidden--md hidden--lg">Создание уникального торгового предложения<br></span><i class="icon-cancel text--danger icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Аудит сайта<br></span><i class="icon-ok text--success icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Тестирование текстов<br></span><i class="icon-ok text--success icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Индивидуальный заголовок для ключей<br></span><i class="icon-ok text--success icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Настройка систем аналитики под ключ<br></span> Яндекс. Метрика</li>
+                  <li><span class="text--info hidden--md hidden--lg">Ретаргетинг<br></span> В Яндекс. Директ</li>
+                  <li><span class="text--info hidden--md hidden--lg">Околоцелевые кампании<br></span><i class="icon-cancel text--danger icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Персональный менеджер<br></span><i class="icon-cancel text--danger icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Ведение<br></span> 8 дней</li>
                 </ul>
               </div>
               <div class="plan__tier-footer">
@@ -307,24 +402,24 @@
               </div>
             </div>
           </section>
-          <section class="col-md-3 col-sm-6 col-xs-12">
+          <section class="col-lg-3 col-sm-6 col-xs-12">
             <div class="plan__tier text--center margleft10 margright10">
-              <div class="plan__tier-header">
+              <div class="plan__tier-header scroll">
                 <h5 class="text--uppercase">Стартовый</h5>
               </div>
               <div class="plan__tier-body">
                 <ul class="list--unstyled">
-                  <li>Яндекс</li>
-                  <li>До 300</li>
-                  <li><i class="icon-cancel text--danger icon-2x"></i></li>
-                  <li><i class="icon-cancel text--danger icon-2x"></i></li>
-                  <li><i class="icon-cancel text--danger icon-2x"></i></li>
-                  <li><i class="icon-cancel text--danger icon-2x"></i></li>
-                  <li><i class="icon-cancel text--danger icon-2x"></i></li>
-                  <li><i class="icon-cancel text--danger icon-2x"></i></li>
-                  <li><i class="icon-cancel text--danger icon-2x"></i></li>
-                  <li><i class="icon-cancel text--danger icon-2x"></i></li>
-                  <li><i class="icon-cancel text--danger icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Реклама в системах<br></span> Яндекс</li>
+                  <li><span class="text--info hidden--md hidden--lg">Ключевых слов<br></span> До 300</li>
+                  <li><span class="text--info hidden--md hidden--lg">Создание уникального торгового предложения<br></span><i class="icon-cancel text--danger icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Аудит сайта<br></span><i class="icon-cancel text--danger icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Тестирование текстов<br></span><i class="icon-cancel text--danger icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Индивидуальный заголовок для ключей<br></span><i class="icon-cancel text--danger icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Настройка систем аналитики под ключ<br></span><i class="icon-cancel text--danger icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Ретаргетинг<br></span><i class="icon-cancel text--danger icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Околоцелевые кампании<br></span><i class="icon-cancel text--danger icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Персональный менеджер<br></span><i class="icon-cancel text--danger icon-2x"></i></li>
+                  <li><span class="text--info hidden--md hidden--lg">Ведение<br></span><i class="icon-cancel text--danger icon-2x"></i></li>
                 </ul>
               </div>
               <div class="plan__tier-footer">
@@ -334,7 +429,7 @@
           </section>
         </div>
         <h2 class="text--danger">Внимание! Акция!</h2>
-        <p class="reasons__text"><b>ДО 12 ОКТЯБРЯ!</b> Закажите любой тарифный план<span> и получите<b> СКИДКУ 44%</b> на 10 месяцев ведения!</span></p><a href="#" class="btn btn--danger margtop20">получить скидку</a>
+        <p class="reasons__text margtop20"><b>ДО 12 ОКТЯБРЯ!</b> Закажите любой тарифный план<span> и получите<b> СКИДКУ 44%</b> на 10 месяцев ведения!</span></p><a href="#form_sale" class="btn btn--danger margtop20 margbot10 fancybox">получить скидку</a>
       </div>
     </div>
     <div id="projects" class="projects">
@@ -344,66 +439,66 @@
           <div class="background__photo-3 hidden--xs visible-md"><img src="images/lines.png" alt=""></div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="projects-elem elem--success">
-              <h4 class="reasons__text">Оставляете<span> заявку</span></h4>
+              <h4 class="reasons__text">1. Оставляете<span> заявку</span></h4>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="projects-elem elem--shadow">
-              <h4 class="reasons__text">С вами<span> связывается</span><span> наш менеджер</span></h4>
+              <h4 class="reasons__text">2. С вами<span> связывается</span><span> наш менеджер</span></h4>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="projects-elem elem--shadow">
-              <h4 class="reasons__text">Мы делаем<span> прогноз продаж</span><span> для вашего бизнеса</span></h4>
+              <h4 class="reasons__text">3. Мы делаем<span> прогноз продаж</span><span> для вашего бизнеса</span></h4>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="projects-elem elem--shadow">
-              <h4 class="reasons__text">Создаем стратегию<span> продвижения</span><span> под ваш бюджет</span></h4>
+              <h4 class="reasons__text">4. Создаем стратегию<span> продвижения</span><span> под ваш бюджет</span></h4>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="projects-elem elem--shadow">
-              <h4 class="reasons__text">В течении 7 дней<span> мы создаем вашу</span><span> рекламную</span><span> кампанию</span></h4>
+              <h4 class="reasons__text">5. В течении 7 дней<span> мы создаем вашу</span><span> рекламную</span><span> кампанию</span></h4>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="projects-elem elem--shadow">
-              <h4 class="reasons__text">Подписываем<span> договор</span></h4>
+              <h4 class="reasons__text">6. Подписываем<span> договор</span></h4>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="projects-elem elem--success">
-              <h4 class="reasons__text">Вы выбираете<span> тарифный план</span></h4>
+              <h4 class="reasons__text">7. Вы выбираете<span> тарифный план</span></h4>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="projects-elem elem--shadow">
-              <h4 class="reasons__text">Согласовываем<span> прогноз</span><span> и стратегию</span></h4>
+              <h4 class="reasons__text">8. Согласовываем<span> прогноз</span><span> и стратегию</span></h4>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="projects-elem elem--shadow">
-              <h4 class="reasons__text">Сдаем итоговую<span> работу</span><span> на согласование</span></h4>
+              <h4 class="reasons__text">9. Сдаем итоговую<span> работу</span><span> на согласование</span></h4>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="projects-elem elem--success">
-              <h4 class="reasons__text">Вы пополняете<span> бюджет кампаний</span></h4>
+              <h4 class="reasons__text">10. Вы пополняете<span> бюджет кампаний</span></h4>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="projects-elem elem--shadow">
-              <h4 class="reasons__text">Запускаем<span> рекламу</span></h4>
+              <h4 class="reasons__text">11. Запускаем<span> рекламу</span></h4>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="projects-elem elem--success">
-              <h4 class="reasons__text">Вы получаете<span> заказы</span></h4>
+              <h4 class="reasons__text">12. Вы получаете<span> заказы</span></h4>
             </div>
           </div>
         </div>
-        <div class="text--center"><a href="#" class="btn btn--danger margtop20 margbot20">Хочу обсудить свой проект!</a></div>
+        <div class="text--center"><a href="#form" class="btn btn--danger margtop20 margbot20 fancybox">Хочу обсудить свой проект!</a></div>
       </div>
     </div>
     <div id="feedback" class="feedback text--center">
@@ -421,7 +516,10 @@
                   <div class="form-group input-group"><span class="input-group-addon"><i class="icon-mail"></i></span>
                     <input type="email" placeholder="E-Mail" class="form-control">
                   </div>
-                  <div class="form-group capcha"><img src="images/capcha.jpg" alt=""></div>
+                  <div class="form-group capcha">
+                    <!--img(src="images/capcha.jpg", alt="")-->
+                    <div data-sitekey="6LfrrxATAAAAAL14RZHhyLJLfHc1gtwSceTkrg-w" class="g-recaptcha"></div>
+                  </div>
                   <div class="form-group">
                     <input type="submit" value="Задать вопрос" class="btn btn--danger btn--block">
                   </div>
@@ -448,11 +546,17 @@
     <div class="social text--center">
       <ul class="list--inline">
         <li><a href="#"><img src="icons/vk.png" alt=""></a></li>
-        <li><a href="#"><img src="icons/google.png" alt=""></a></li>
-        <li><a href="#"><img src="icons/twitter.png" alt=""></a></li>
+        <!--li-->
+        <!--    a(href="#")-->
+        <!--        img(src="icons/google.png", alt="")-->
+        <!--li-->
+        <!--    a(href="#")-->
+        <!--        img(src="icons/twitter.png", alt="")-->
         <li><a href="#"><img src="icons/facebook.png" alt=""></a></li>
-        <li><a href="#"><img src="icons/youtube.png" alt=""></a></li>
-        <li><a href="#"><img src="icons/odnoklassniki.png" alt=""></a></li>
+        <li><a href="#"><img src="icons/GK.png" alt=""></a></li>
+        <!--li-->
+        <!--    a(href="#")-->
+        <!--        img(src="icons/odnoklassniki.png", alt="")-->
       </ul>
     </div>
   </main>
