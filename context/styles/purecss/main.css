@@ -1499,7 +1499,8 @@ footer {
     padding: 0 8px;
   }
 
-  .reasons__text i {
+  .reasons__text i,
+  .reasons__title b {
     display: none;
   }
 

@@ -3298,7 +3298,7 @@ footer {
   .tabs__caption li {
     font-size: 13px;
     padding: 0 8px; }
-  .reasons__text i {
+  .reasons__text i, .reasons__title b {
     display: none; }
   .navigation {
     position: absolute;
