@@ -3280,17 +3280,7 @@ footer {
     bottom: -22px;
     left: 0;
     right: 0;
-    margin: auto; }
-  .projects-elem {
-    position: relative; }
-    .projects-elem:after {
-      content: '';
-      background: url("../images/arrow.png") no-repeat center;
-      position: absolute;
-      bottom: -10px;
-      left: 0;
-      right: 0;
-      margin: auto; } }
+    margin: auto; } }
 
 @media (max-width: 1002px) {
   .reasons-counter {
@@ -3325,9 +3315,9 @@ footer {
     .tabs__caption li {
       font-size: 11px;
       display: block; }
-  .col-xs-12:not(:last-child) .projects-elem {
+  .col-xs-12:not(:last-child):not(:nth-last-child(2)) .projects-elem {
     position: relative; }
-    .col-xs-12:not(:last-child) .projects-elem:after {
+    .col-xs-12:not(:last-child):not(:nth-last-child(2)) .projects-elem:after {
       content: '';
       background: url("../images/arrow.png") no-repeat center;
       position: absolute;
@@ -3347,4 +3337,16 @@ footer {
   .phone {
     padding: 10px; }
     .phone a {
-      color: #a5a5a5; } }
+      color: #a5a5a5; }
+  .col-xs-12:not(:last-child) .projects-elem {
+    position: relative; }
+    .col-xs-12:not(:last-child) .projects-elem:after {
+      content: '';
+      background: url("../images/arrow.png") no-repeat center;
+      position: absolute;
+      bottom: -15%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 5px;
+      height: 8px; } }
