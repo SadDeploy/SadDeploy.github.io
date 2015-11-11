@@ -300,7 +300,7 @@ a.text--info:focus {
 }
 
 .text--danger {
-  color: #d7554b;
+  color: #ef5f54;
 }
 
 ul {
@@ -443,26 +443,26 @@ img {
 
 .btn--danger {
   color: #fff;
-  background-color: #d7554b;
-  border-color: #d7554b;
+  background-color: #ef5f54;
+  border-color: #ef5f54;
 }
 
 .btn--danger:focus {
-  color: #d7554b;
+  color: #ef5f54;
   background-color: #fff;
-  border-color: #d7554b;
+  border-color: #ef5f54;
 }
 
 .btn--danger:hover {
   color: #fff;
-  background-color: #c4362b;
-  border-color: #c4362b;
+  background-color: #eb3325;
+  border-color: #eb3325;
 }
 
 .btn--danger:active {
-  color: #d7554b;
+  color: #ef5f54;
   background-color: #fff;
-  border-color: #d7554b;
+  border-color: #ef5f54;
   background-image: none;
 }
 
@@ -829,14 +829,18 @@ input.form-control {
   color: #8b8b8b;
   text-align: center;
   background-color: #fff;
-  border-right: 10px solid transparent;
+  border-right: 10px solid #f4f4f4;
   border-radius: 0;
 }
 
 .input-group-addon i {
-  background-color: #e7e7e7;
-  padding: 17px 5px 17px 15px;
+  background-color: #fff;
+  padding: 17px 17px 17.5px 18px;
   display: block;
+}
+
+.input-group-addon i:before {
+  margin: 0;
 }
 
 .input-group-addon:first-child {
@@ -1181,6 +1185,11 @@ input.form-control {
 .plan__tier-footer h2 span,
 .plan__tier-footer h4 span {
   text-decoration: line-through;
+}
+
+.btn--danger:hover {
+  background-color: #d7554b;
+  border-color: #d7554b;
 }
 
 @media (min-width: 768px) {

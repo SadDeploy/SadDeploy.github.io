@@ -398,11 +398,11 @@ a.text--warning:focus {
   color: #fec10e; }
 
 .text--danger {
-  color: #d7554b; }
+  color: #ef5f54; }
 
 a.text--danger:hover,
 a.text--danger:focus {
-  color: #c4362b; }
+  color: #eb3325; }
 
 ul,
 ol {
@@ -681,22 +681,22 @@ tbody.collapse.in {
 
 .btn--danger {
   color: #fff;
-  background-color: #d7554b;
-  border-color: #d7554b; }
+  background-color: #ef5f54;
+  border-color: #ef5f54; }
   .btn--danger:focus,
   .btn--danger.focus {
-    color: #d7554b;
+    color: #ef5f54;
     background-color: #fff;
-    border-color: #d7554b; }
+    border-color: #ef5f54; }
   .btn--danger:hover {
     color: #fff;
-    background-color: #c4362b;
-    border-color: #c4362b; }
+    background-color: #eb3325;
+    border-color: #eb3325; }
   .btn--danger:active,
   .btn--danger.active {
-    color: #d7554b;
+    color: #ef5f54;
     background-color: #fff;
-    border-color: #d7554b;
+    border-color: #ef5f54;
     background-image: none; }
 
 .btn--lg {
@@ -1509,7 +1509,7 @@ fieldset[disabled] .checkbox label {
   color: #8b8b8b;
   text-align: center;
   background-color: #fff;
-  border-right: 10px solid transparent;
+  border-right: 10px solid #f4f4f4;
   border-radius: 0; }
   .input-group-addon.input-sm {
     padding: 5px 10px;
@@ -1523,9 +1523,11 @@ fieldset[disabled] .checkbox label {
   .input-group-addon input[type="checkbox"] {
     margin-top: 0; }
   .input-group-addon i {
-    background-color: #e7e7e7;
-    padding: 17px 5px 17px 15px;
+    background-color: #fff;
+    padding: 17px 17px 17.5px 18px;
     display: block; }
+    .input-group-addon i:before {
+      margin: 0; }
 
 .input-group .form-control:first-child,
 .input-group-addon:first-child,
@@ -1928,8 +1930,10 @@ table th[class*="col-"] {
 .fancybox-outer .form-group {
   margin-right: 0; }
 
-.fancybox-outer .input-group-addon i {
-  background-color: #f7f7f7; }
+.fancybox-outer .input-group-addon {
+  border-color: #fff; }
+  .fancybox-outer .input-group-addon i {
+    background-color: #f7f7f7; }
 
 .reasons-counter {
   color: #e8ebef;
@@ -2050,6 +2054,10 @@ table th[class*="col-"] {
 
 .gm-style .place-card-large {
   display: none !important; }
+
+.btn--danger:hover {
+  background-color: #d7554b;
+  border-color: #d7554b; }
 
 @media (min-width: 768px) {
   .reviews-element {
