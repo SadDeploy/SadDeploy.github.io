@@ -100,7 +100,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
   }, s.prototype.addAriaAndCollapsedClass = function (t, e) {
     var a = t.hasClass("in");t.attr("aria-expanded", a), e.toggleClass("collapsed", !a).attr("aria-expanded", a);
   };var i = t.fn.collapse;t.fn.collapse = a, t.fn.collapse.Constructor = s, t.fn.collapse.noConflict = function () {
-    return (t.fn.collapse = i, this);
+    return t.fn.collapse = i, this;
   }, t(document).on("click.bs.collapse.data-api", '[data-toggle="collapse"]', function (s) {
     var i = t(this);i.attr("data-target") || s.preventDefault();var n = e(i),
         l = n.data("bs.collapse"),
