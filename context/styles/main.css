@@ -1904,7 +1904,7 @@ table th[class*="col-"] {
 
 .background__photo-1 {
   position: absolute;
-  right: -53px;
+  right: -60px;
   bottom: -5px;
   z-index: 0; }
 
@@ -1937,7 +1937,7 @@ table th[class*="col-"] {
   font-weight: 700;
   display: block;
   float: left;
-  height: 260px;
+  height: 250px;
   margin-right: 18px; }
 
 .background-elem {
@@ -1957,8 +1957,7 @@ table th[class*="col-"] {
   margin-bottom: 20px; }
 
 .results {
-  background: url("../images/results__back.jpg") no-repeat center;
-  background-size: cover;
+  background: url("../images/results_line.png") no-repeat top center, url("../images/results_background.jpg") no-repeat center;
   padding: 30px 0 47px;
   color: #fff; }
 
@@ -3299,6 +3298,8 @@ footer {
   .tabs__caption li {
     font-size: 13px;
     padding: 0 8px; }
+  .reasons__text i {
+    display: none; }
   .navigation {
     position: absolute;
     top: 47px;
@@ -3313,6 +3314,8 @@ footer {
         background-color: #303030; } }
 
 @media (max-width: 768px) {
+  .results {
+    background: url("../images/results_background.jpg") no-repeat center; }
   .header__top {
     padding: 12px 0; }
   .tabs_inner {
