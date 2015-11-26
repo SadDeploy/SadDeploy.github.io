@@ -1498,7 +1498,7 @@ textarea.form-control {
   position: relative;
   width: 100%;
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .date:after {
@@ -1583,7 +1583,6 @@ article a {
   width: 100%;
   font-size: 20px;
   height: 91px;
-  line-height: 83px;
   font-weight: 700;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.46);
@@ -1731,7 +1730,7 @@ article a {
 
 .img-xs-left {
   float: left;
-  margin-right: 10px;
+  margin-right: 30px;
 }
 
 .img-xs-center {
@@ -1760,7 +1759,7 @@ article a {
 
   .img-sm-left {
     float: left;
-    margin-right: 10px;
+    margin-right: 30px;
   }
 }
 

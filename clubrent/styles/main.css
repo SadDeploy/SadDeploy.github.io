@@ -5538,7 +5538,6 @@ article {
   width: 100%;
   font-size: 20px;
   height: 91px;
-  line-height: 83px;
   font-weight: 700;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.46);
@@ -5669,7 +5668,7 @@ article {
 
 .img-xs-left {
   float: left;
-  margin-right: 10px; }
+  margin-right: 30px; }
 
 .img-xs-center {
   display: block;
@@ -5702,7 +5701,7 @@ article {
     margin-left: 20px; }
   .img-sm-left {
     float: left;
-    margin-right: 10px; }
+    margin-right: 30px; }
   .img-sm-center {
     display: block;
     margin-right: auto;
