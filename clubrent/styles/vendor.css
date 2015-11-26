@@ -113,17 +113,21 @@
 /* Styling Next and Prev buttons */
 
 .owl-theme .owl-controls .owl-buttons div{
-	display: inline-block;
-	zoom: 1;
-	*display: inline;/*IE7 life-saver */
-	margin: 5px;
-	height: 57px;
-	width: 20px;
-	background: url('../images/arrow.png') no-repeat;
-	position: absolute;
-	top: 26%;
-	z-index: 1;
+	display: none;
 }
+@media (min-width: 768px) {
+	.owl-theme .owl-controls .owl-buttons div{
+		display: inline-block;
+		zoom: 1;
+		*display: inline;/*IE7 life-saver */
+		margin: 5px;
+		height: 57px;
+		width: 20px;
+		background: url('../images/arrow.png') no-repeat;
+		position: absolute;
+		top: 26%;
+		z-index: 1;
+	}
 	.owl-prev {
 		float: left;
 		left: -8%;
@@ -133,6 +137,7 @@
 		float: right;
 		right: -8%;
 	}
+}
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
 .owl-theme .owl-controls.clickable .owl-buttons div:hover{
