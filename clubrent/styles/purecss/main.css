@@ -1484,13 +1484,13 @@ textarea.form-control {
 
 @media (min-width: 768px) {
   .summ {
-    margin-top: 3px;
+    font-size: 13px;
   }
 }
 
 @media (min-width: 992px) {
   .summ {
-    margin-top: 13px;
+    font-size: 17px;
   }
 }
 
