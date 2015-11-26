@@ -5383,8 +5383,12 @@ button.close {
       display: block;
       margin-bottom: 10px; }
     .search .buttons-row {
-      margin-left: -5px;
-      margin-right: -5px; }
+      margin-left: 0;
+      margin-right: 0; }
+      @media (min-width: 768px) {
+        .search .buttons-row {
+          margin-left: -5px;
+          margin-right: -5px; } }
     @media (min-width: 768px) {
       .search .buttons {
         margin-top: 0;
@@ -5471,10 +5475,12 @@ button.close {
   margin-top: 13px; }
   @media (min-width: 768px) {
     .summ {
-      font-size: 13px; } }
+      font-size: 13px;
+      margin-top: 30px; } }
   @media (min-width: 992px) {
     .summ {
-      font-size: 17px; } }
+      font-size: 17px;
+      margin-top: 26px; } }
 
 .date {
   position: relative;

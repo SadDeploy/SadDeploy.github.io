@@ -1354,8 +1354,15 @@ textarea.form-control {
 }
 
 .search .buttons-row {
-  margin-left: -5px;
-  margin-right: -5px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (min-width: 768px) {
+  .search .buttons-row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1485,12 +1492,14 @@ textarea.form-control {
 @media (min-width: 768px) {
   .summ {
     font-size: 13px;
+    margin-top: 30px;
   }
 }
 
 @media (min-width: 992px) {
   .summ {
     font-size: 17px;
+    margin-top: 26px;
   }
 }
 
