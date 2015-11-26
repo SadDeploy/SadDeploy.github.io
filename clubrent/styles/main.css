@@ -5376,9 +5376,12 @@ button.close {
   .search .form-control {
     font-size: 16px; }
   .search .buttons {
-    margin-top: 20px;
+    margin-top: 0;
     text-align: center;
     display: block; }
+    @media (min-width: 768px) {
+      .search .buttons {
+        margin-top: 20px; } }
     .search .buttons .btn {
       display: block;
       margin-bottom: 10px; }
