@@ -31,7 +31,7 @@ $(window).load(function () {
 
     // custom
     $('.full-js a').click(function () {
-        $(this).parent().hide().parents().find('.custom-js').removeClass('col-xs-12').addClass('col-md-6').parents().find('.full-block').show('slow').parents().find('.form').addClass('anima');
+        $(this).parent().hide().parents().find('.custom-js').addClass('col-md-6').parents().find('.full-block').show('slow').parents().find('.form').addClass('anima');
     });
 });
 //# sourceMappingURL=main.js.map

@@ -418,7 +418,8 @@ blockquote footer:before {
 .col-sm-7,
 .col-sm-8,
 .col-xs-11,
-.col-xs-12 {
+.col-xs-12,
+.col-md-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -500,7 +501,8 @@ blockquote footer:before {
 
 @media (min-width: 992px) {
   .col-md-3,
-  .col-md-6 {
+  .col-md-6,
+  .col-md-12 {
     float: left;
   }
 
@@ -510,6 +512,10 @@ blockquote footer:before {
 
   .col-md-6 {
     width: 50%;
+  }
+
+  .col-md-12 {
+    width: 100%;
   }
 }
 
@@ -747,6 +753,7 @@ textarea.form-control {
   background-color: #f1f3f4;
   border-color: #f1f3f4;
   padding: 17px;
+  border-radius: 3px;
 }
 
 .btn-checkbox {
@@ -802,7 +809,7 @@ textarea.form-control {
   margin-top: 9px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .btn-group + .btn-group {
     margin-left: 40px;
   }
@@ -1107,6 +1114,16 @@ textarea.form-control {
   border-color: #ddd;
 }
 
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
 @-ms-viewport {
   width: device-width;
 }
@@ -1115,8 +1132,38 @@ textarea.form-control {
   display: none !important;
 }
 
+.visible-sm {
+  display: none !important;
+}
+
+.visible-md {
+  display: none !important;
+}
+
+.visible-lg {
+  display: none !important;
+}
+
 @media (max-width: 767px) {
   .visible-xs {
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 991px) {
+  .visible-md {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .visible-lg {
     display: block !important;
   }
 }
@@ -1303,6 +1350,7 @@ textarea.form-control {
 
 .search .buttons .btn {
   display: block;
+  margin-bottom: 10px;
 }
 
 .search .buttons-row {
@@ -1321,6 +1369,7 @@ textarea.form-control {
 
   .search .buttons .btn {
     display: table-cell;
+    margin-bottom: 0;
   }
 }
 
@@ -1395,7 +1444,15 @@ textarea.form-control {
 }
 
 .text h4 {
-  margin-bottom: 32px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .text h4 {
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
 }
 
 .cube__background {
@@ -1425,10 +1482,23 @@ textarea.form-control {
   margin-top: 13px;
 }
 
+@media (min-width: 768px) {
+  .summ {
+    margin-top: 3px;
+  }
+}
+
+@media (min-width: 992px) {
+  .summ {
+    margin-top: 13px;
+  }
+}
+
 .date {
   position: relative;
   width: 100%;
   display: inline-block;
+  margin-bottom: 5px;
 }
 
 .date:after {
@@ -1449,6 +1519,7 @@ textarea.form-control {
 @media (min-width: 768px) {
   .date {
     width: 49%;
+    margin-bottom: 0;
   }
 
   .date:last-child {
@@ -1495,21 +1566,38 @@ article a {
 }
 
 .choose .btn {
-  padding: 10px 30px;
+  padding: 25px 30px;
+}
+
+@media (min-width: 480px) {
+  .choose .btn {
+    padding: 10px 30px;
+  }
+}
+
+.choose a p {
+  margin-bottom: 0;
 }
 
 .form [type="submit"] {
   width: 100%;
   font-size: 20px;
   height: 91px;
-  line-height: 87px;
+  line-height: 83px;
   font-weight: 700;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.46);
+  margin-bottom: 30px;
 }
 
 .form [type="submit"]:hover {
-  border-color: #c41e3a;
+  color: #fff;
+  background-color: #e03754;
+  border-color: #e03754;
+}
+
+.form article [type="submit"] {
+  margin-bottom: 15px;
 }
 
 .v-col {

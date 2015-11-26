@@ -127,7 +127,7 @@
         <p class="margbot30"><a href="#" class="text-danger">« Назад к выбору класса</a></p>
         <div class="row">
           <form action="" method="post">
-            <div class="col-md-6">
+            <div class="col-sm-6">
               <div data-toggle="buttons" class="btn-group margbot20">
                 <label class="btn btn-checkbox active">
                   <input type="radio" name="type" id="auto" autocomplete="off" checked><img src="images/AT.svg" alt=""><br>Автомат
@@ -141,6 +141,58 @@
                   <input type="checkbox" name="zalog" id="zalog" autocomplete="off" checked>Залог 5 000 ₽
                 </label>
               </div>
+            </div>
+            <div class="col-sm-6">
+              <div data-toggle="buttons" class="btn-group margbot20">
+                <label class="btn btn-checkbox btn-xxlg">
+                  <input type="checkbox" name="deliver" id="deliver" autocomplete="off" checked>Доставка<br><i class="fa fa-square-o"></i> + 500 ₽
+                </label>
+              </div>
+              <div data-toggle="buttons" class="btn-group margbot20">
+                <label class="btn btn-checkbox">
+                  <input type="checkbox" name="gps" id="gps" autocomplete="off">GPS навигатор<br><i class="fa fa-square-o"></i> + 700 ₽<br><i class="small">за 14 суток</i>
+                </label>
+              </div>
+              <div data-toggle="buttons" class="btn-group margbot20">
+                <label class="btn btn-checkbox">
+                  <input type="checkbox" name="child" id="child" autocomplete="off">Детское кресло<br><i class="fa fa-square-o"></i> + 700 ₽<br><i class="small">за 14 суток</i>
+                </label>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="visible-xs visible-sm col-md-12">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="row text--sm--left text-xs-center">
+                    <div class="col-xxs-12 col-xs-4 v-col"><img src="images/economy.png" alt="" class="img-responsive"></div>
+                    <div class="col-xxs-12 col-xs-7 v-col">
+                      <h4 class="text-default">Эконом</h4>
+                      <p class="text-danger">Renault Logan или Hyundai Solaris или Volkswagen Polo</p>
+                    </div>
+                  </div>
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p><i class="fa fa-map-marker"></i> город, Санкт-Петербург, Россия</p>
+                          <p><i class="fa fa-clock-o"></i> с 26.11.2015 по 26.11.2016 (7 суток)</p>
+                        </td>
+                        <td class="text-right">20 500 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>Общая цена аренды</td>
+                        <td class="text-right">20 500 ₽</td>
+                      </tr>
+                      <tr>
+                        <th>Оплата за использование сервиса</th>
+                        <th class="text-right">499 ₽</th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
               <div class="panel panel-default">
                 <div class="panel-body">
                   <h4>Личные данный водителя</h4>
@@ -205,49 +257,36 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div data-toggle="buttons" class="btn-group margbot20">
-                <label class="btn btn-checkbox btn-xxlg">
-                  <input type="checkbox" name="deliver" id="deliver" autocomplete="off" checked>Доставка<br><i class="fa fa-square-o"></i> + 500 ₽
-                </label>
-              </div>
-              <div data-toggle="buttons" class="btn-group margbot20">
-                <label class="btn btn-checkbox">
-                  <input type="checkbox" name="gps" id="gps" autocomplete="off">GPS навигатор<br><i class="fa fa-square-o"></i> + 700 ₽<br><i class="small">за 14 суток</i>
-                </label>
-              </div>
-              <div data-toggle="buttons" class="btn-group margbot20">
-                <label class="btn btn-checkbox">
-                  <input type="checkbox" name="child" id="child" autocomplete="off">Детское кресло<br><i class="fa fa-square-o"></i> + 700 ₽<br><i class="small">за 14 суток</i>
-                </label>
-              </div>
               <div class="panel panel-default">
                 <div class="panel-body">
-                  <div class="row text--sm--left text-xs-center">
-                    <div class="col-xxs-12 col-xs-4 v-col"><img src="images/economy.png" alt="" class="img-responsive"></div>
-                    <div class="col-xxs-12 col-xs-7 v-col">
-                      <h4 class="text-default">Эконом</h4>
-                      <p class="text-danger">Renault Logan или Hyundai Solaris или Volkswagen Polo</p>
+                  <div class="hidden-xs visible-md visible-lg">
+                    <div class="row text--sm--left text-xs-center">
+                      <div class="col-xxs-12 col-xs-4 v-col"><img src="images/economy.png" alt="" class="img-responsive"></div>
+                      <div class="col-xxs-12 col-xs-7 v-col">
+                        <h4 class="text-default">Эконом</h4>
+                        <p class="text-danger">Renault Logan или Hyundai Solaris или Volkswagen Polo</p>
+                      </div>
                     </div>
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <p><i class="fa fa-map-marker"></i> город, Санкт-Петербург, Россия</p>
+                            <p><i class="fa fa-clock-o"></i> с 26.11.2015 по 26.11.2016 (7 суток)</p>
+                          </td>
+                          <td class="text-right">20 500 ₽</td>
+                        </tr>
+                        <tr>
+                          <td>Общая цена аренды</td>
+                          <td class="text-right">20 500 ₽</td>
+                        </tr>
+                        <tr>
+                          <th>Оплата за использование сервиса</th>
+                          <th class="text-right">499 ₽</th>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
-                  <table class="table">
-                    <tbody>
-                      <tr>
-                        <td>
-                          <p><i class="fa fa-map-marker"></i> город, Санкт-Петербург, Россия</p>
-                          <p><i class="fa fa-clock-o"></i> с 26.11.2015 по 26.11.2016 (7 суток)</p>
-                        </td>
-                        <td class="text-right">20 500 ₽</td>
-                      </tr>
-                      <tr>
-                        <td>Общая цена аренды</td>
-                        <td class="text-right">20 500 ₽</td>
-                      </tr>
-                      <tr>
-                        <th>Оплата за использование сервиса</th>
-                        <th class="text-right">499 ₽</th>
-                      </tr>
-                    </tbody>
-                  </table>
                   <div class="checkbox margbot40">
                     <label>
                       <input type="checkbox"><a href="#" class="text-danger">С условиями аренды автомобиля согласен</a>
