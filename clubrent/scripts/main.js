@@ -11,6 +11,13 @@ $(window).load(function () {
         singleItem: true
     });
 
+    // select
+    $(".js-example-basic-single").select2({
+        placeholder: "Укажите место",
+        minimumResultsForSearch: Infinity,
+        allowClear: true
+    });
+
     // datepicker
     $('.date input').datepicker({
         format: "mm.dd.yyyy",
@@ -32,6 +39,10 @@ $(window).load(function () {
     // custom
     $('.full-js a').click(function () {
         $(this).parent().hide().parents().find('.custom-js').addClass('col-md-6').parents().find('.full-block').show('slow').parents().find('.form').addClass('anima');
+    });
+
+    $('.short-js a').click(function () {
+        $(this).parents().find('.custom-js').removeClass('col-md-6').parents().find('.full-block').hide('slow').parents().find('.form').removeClass('anima').parents().find('.full-js').show();
     });
 });
 //# sourceMappingURL=main.js.map

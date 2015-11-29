@@ -46,6 +46,7 @@ img {
 
 button,
 input,
+select,
 textarea {
   color: inherit;
   font: inherit;
@@ -56,7 +57,8 @@ button {
   overflow: visible;
 }
 
-button {
+button,
+select {
   text-transform: none;
 }
 
@@ -184,6 +186,7 @@ body {
 
 input,
 button,
+select,
 textarea {
   font-family: inherit;
   font-size: inherit;
@@ -408,13 +411,12 @@ blockquote footer:before {
 .col-xs-3,
 .col-sm-3,
 .col-md-3,
-.col-xs-4,
 .col-sm-4,
+.col-xs-5,
 .col-sm-5,
 .col-xs-6,
 .col-sm-6,
 .col-md-6,
-.col-xs-7,
 .col-sm-7,
 .col-sm-8,
 .col-xs-11,
@@ -428,9 +430,8 @@ blockquote footer:before {
 
 .col-xs-1,
 .col-xs-3,
-.col-xs-4,
+.col-xs-5,
 .col-xs-6,
-.col-xs-7,
 .col-xs-11,
 .col-xs-12 {
   float: left;
@@ -444,16 +445,12 @@ blockquote footer:before {
   width: 25%;
 }
 
-.col-xs-4 {
-  width: 33.33333%;
+.col-xs-5 {
+  width: 41.66667%;
 }
 
 .col-xs-6 {
   width: 50%;
-}
-
-.col-xs-7 {
-  width: 58.33333%;
 }
 
 .col-xs-11 {
@@ -681,28 +678,28 @@ textarea.form-control {
 }
 
 .btn-default:focus {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #8c8c8c;
+  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 .btn-default:hover {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 .btn-default:active {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 .btn-default:active:hover,
 .btn-default:active:focus {
-  color: #333;
-  background-color: #d4d4d4;
-  border-color: #8c8c8c;
+  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 .btn-default:active {
@@ -716,31 +713,31 @@ textarea.form-control {
 }
 
 .btn-danger:focus {
-  color: #fff;
-  background-color: #98172d;
-  border-color: #3f0a13;
+  color: #c41e3a;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 .btn-danger:hover {
-  color: #fff;
-  background-color: #98172d;
-  border-color: #791224;
+  color: #c41e3a;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 .btn-danger:active,
 .btn-danger.active {
-  color: #fff;
-  background-color: #98172d;
-  border-color: #791224;
+  color: #c41e3a;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 .btn-danger:active:hover,
 .btn-danger:active:focus,
 .btn-danger.active:hover,
 .btn-danger.active:focus {
-  color: #fff;
-  background-color: #791224;
-  border-color: #3f0a13;
+  color: #c41e3a;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 .btn-danger:active,
@@ -1334,7 +1331,7 @@ textarea.form-control {
 
 .search {
   padding: 30px 0;
-  background-color: #c41e3a;
+  background: #c41e3a url("../images/pattern.gif") repeat;
   color: #fff;
 }
 
@@ -1343,9 +1340,15 @@ textarea.form-control {
 }
 
 .search .buttons {
-  margin-top: 20px;
+  margin-top: 0;
   text-align: center;
   display: block;
+}
+
+@media (min-width: 768px) {
+  .search .buttons {
+    margin-top: 20px;
+  }
 }
 
 .search .buttons .btn {
@@ -1380,24 +1383,25 @@ textarea.form-control {
   }
 }
 
-.search [type="submit"] {
+.search .btn-submit {
   width: 100%;
   text-shadow: 0 0 0 rgba(255, 255, 255, 0.35);
   color: #4a4a4a;
   font-size: 20px;
   height: 91px;
-  line-height: 91px;
+  line-height: 81px;
   font-weight: 700;
   border: 1px solid #999;
   background: url("../images/submit.jpg") repeat-x center;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
-.search [type="submit"]:hover {
+.search .btn-submit:active,
+.search .btn-submit:hover {
   background: #e6e6e6;
 }
 
-.search [type="submit"] img {
+.search .btn-submit img {
   margin-left: 10px;
 }
 
@@ -1419,6 +1423,7 @@ textarea.form-control {
 
 .advantages__innerblock {
   padding: 40px 5px;
+  border: 1px solid #ccc;
   border-bottom: 6px solid #c41e3a;
 }
 
@@ -1470,12 +1475,15 @@ textarea.form-control {
   display: inline-block;
   border-bottom: 4px solid #eeeeee;
   margin-bottom: 50px;
+  line-height: 1.5em;
 }
 
 .cube__background .module__title {
   border-color: #fff;
 }
 
+.btn-danger:focus,
+.btn-danger:active,
 .btn-danger.active,
 .btn-danger.active:hover,
 .btn-danger:hover {
@@ -1499,7 +1507,7 @@ textarea.form-control {
 @media (min-width: 992px) {
   .summ {
     font-size: 17px;
-    margin-top: 26px;
+    margin-top: 23px;
   }
 }
 
@@ -1507,7 +1515,6 @@ textarea.form-control {
   position: relative;
   width: 100%;
   display: inline-block;
-  margin-bottom: 10px;
 }
 
 .date:after {
@@ -1605,7 +1612,11 @@ article a {
 }
 
 .form article [type="submit"] {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+:focus {
+  outline: none;
 }
 
 .v-col {
@@ -1644,6 +1655,11 @@ article a {
 
 .custom-js {
   transition: all 0.3s ease;
+}
+
+.fa-map-marker {
+  width: 14px;
+  text-align: center;
 }
 
 .second-type {
@@ -1737,6 +1753,10 @@ article a {
   color: #fff;
 }
 
+.margtop130 {
+  margin-top: 130px;
+}
+
 .img-xs-left {
   float: left;
   margin-right: 30px;
@@ -1770,6 +1790,10 @@ article a {
     float: left;
     margin-right: 30px;
   }
+}
+
+.margleft10 {
+  margin-left: 10px;
 }
 
 .margtop10 {

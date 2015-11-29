@@ -43,7 +43,7 @@
         <nav role="navigation" class="navbar">
           <div class="navbar-header">
             <button type="button" data-toggle="collapse" data-target=".navbar-ex1-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            <div class="navbar-brand">ДОЛГОСРОЧНАЯ АРЕНДА АВТОМОБИЛЕЙ</div>
+            <div class="navbar-brand">ОНЛАЙН-БРОНИРОВАНИЕ АВТОМОБИЛЕЙ</div>
           </div>
           <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -74,7 +74,14 @@
           <form action="" method="post" role="form">
             <div class="col-sm-8">
               <div class="form-group">
-                <input type="text" name="" id="" placeholder="Укажите место " class="form-control">
+                <select name="" class="js-example-basic-single form-control">
+                  <option></option>
+                  <option>город, Москва, Россия</option>
+                  <option>город, Новосибирск, Россия</option>
+                  <option>город, Санкт-Петербург, Россия</option>
+                  <option>город, Сочи, Россия</option>
+                  <option>город, Краснодар, Россия</option>
+                </select>
               </div>
               <div class="form-group">
                 <div class="date">
@@ -84,7 +91,7 @@
                   <input type="text" name="" id="" placeholder="Дата окончания аренды" class="form-control">
                 </div>
               </div>
-              <div class="buttons-row">
+              <div class="buttons-row visible-sm visible-md visible-lg">
                 <div data-toggle="buttons" class="buttons">
                   <label class="btn btn-danger btn-lg active">
                     <input type="radio" name="options" id="option1" autocomplete="off" checked>14 дней
@@ -104,8 +111,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4">
-              <button type="submit">ЗАБРОНИРОВАТЬ<img src="images/arrow-sub.png" alt=""></button>
+            <div class="col-sm-4"><a href="#" class="btn btn-submit">ЗАБРОНИРОВАТЬ<img src="images/arrow-sub.png" alt=""></a>
               <p class="summ text--sm--right text--xs--center">Итоговая сумма аренды за<b> 6 месяцев*</b></p>
             </div>
           </form>
@@ -160,8 +166,8 @@
               <div class="panel panel-default">
                 <div class="panel-body">
                   <div class="row text--sm--left text-xs-center">
-                    <div class="col-xxs-12 col-xs-4 v-col"><img src="images/economy.png" alt="" class="img-responsive"></div>
-                    <div class="col-xxs-12 col-xs-7 v-col">
+                    <div class="col-xxs-12 col-xs-5 v-col text-center"><img src="images/economy.png" alt="" class="img-responsive"></div>
+                    <div class="col-xxs-12 col-xs-6 v-col margleft10">
                       <h4 class="text-default">Эконом</h4>
                       <p class="text-danger">Renault Logan или Hyundai Solaris или Volkswagen Polo</p>
                     </div>
@@ -214,6 +220,7 @@
                     </div>
                   </div>
                   <div style="display:none;" class="full-block">
+                    <h4 class="margtop30">Паспортные данные</h4>
                     <div class="form-group">
                       <label>Дата рождения</label>
                       <input type="text" placeholder="ДД.ММ.ГГГГ" class="form-control dates">
@@ -228,12 +235,12 @@
                     </div>
                     <h4 class="margtop30">Данные водительского удостоверения</h4>
                     <div class="form-group">
-                      <label>Серия, номер паспорта</label>
+                      <label>Серия, номер удостоверения</label>
                       <input type="text" placeholder="0000 000000" class="form-control passport">
                     </div>
                     <div class="form-group">
                       <label>Кем и когда выдан</label>
-                      <input type="text" placeholder="ДД.ММ.ГГГГ" class="form-control dates">
+                      <input type="text" class="form-control">
                     </div>
                     <h4 class="margtop30">Место работы</h4>
                     <div class="form-group">
@@ -248,6 +255,7 @@
                       <label>Телефон (рабочий)</label>
                       <input type="text" class="form-control phone">
                     </div>
+                    <div class="short-js"><a class="btn btn-block btn-gray">Упрощенная форма&nbsp;<i class="fa fa-angle-up text-danger fa-lg"></i></a></div>
                   </div>
                 </div>
               </div>
@@ -257,8 +265,8 @@
                 <div class="panel-body">
                   <div class="hidden-xs visible-md visible-lg">
                     <div class="row text--sm--left text-xs-center">
-                      <div class="col-xxs-12 col-xs-4 v-col"><img src="images/economy.png" alt="" class="img-responsive"></div>
-                      <div class="col-xxs-12 col-xs-7 v-col">
+                      <div class="col-xxs-12 col-xs-5 v-col text--sm--right"><img src="images/economy.png" alt="" class="img-responsive"></div>
+                      <div class="col-xxs-12 col-xs-6 v-col margleft10">
                         <h4 class="text-default">Эконом</h4>
                         <p class="text-danger">Renault Logan или Hyundai Solaris или Volkswagen Polo</p>
                       </div>
@@ -303,7 +311,7 @@
                 <p>Данные Вашей карты вводятся на специальной защищенной платежной странице. Передача информации в процессинговую компанию Uniteller происходит с применением технологии шифрования TLS. Дальнейшая передача информации осуществляется по закрытым банковским каналам, имеющим наивысший уровень надежности. Uniteller не передает данные Вашей карты магазину и иным третьим лицам!</p>
                 <p>Если Ваша карта поддерживает технологию 3D Secure, для осуществления платежа, Вам необходимо будет пройти дополнительную проверку пользователя в банке-эмитенте (банк, который выпустил Вашу карту). Для этого Вы будете направлены на страницу банка, выдавшего карту. Как правило, это дополнительный пароль, который отправляется в SMS, карта переменных кодов, либо другие способы.</p>
                 <p><b>Если у Вас возникли вопросы:</b><br><a href="mailto:support@uniteller.ru">support@uniteller.ru</a> или по телефону&nbsp;<a href="tel:88001001960">8 800 100 19 60</a></p>
-                <button type="submit" class="second-type btn btn-danger">ПЕРЕЙТИ К ОПЛАТЕ</button>
+                <button type="submit" class="second-type btn btn-danger margtop130">ПЕРЕЙТИ К ОПЛАТЕ</button>
               </article>
             </div>
           </form>

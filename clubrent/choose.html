@@ -43,7 +43,7 @@
         <nav role="navigation" class="navbar">
           <div class="navbar-header">
             <button type="button" data-toggle="collapse" data-target=".navbar-ex1-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            <div class="navbar-brand">ДОЛГОСРОЧНАЯ АРЕНДА АВТОМОБИЛЕЙ</div>
+            <div class="navbar-brand">ОНЛАЙН-БРОНИРОВАНИЕ АВТОМОБИЛЕЙ</div>
           </div>
           <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -74,7 +74,14 @@
           <form action="" method="post" role="form">
             <div class="col-sm-8">
               <div class="form-group">
-                <input type="text" name="" id="" placeholder="Укажите место " class="form-control">
+                <select name="" class="js-example-basic-single form-control">
+                  <option></option>
+                  <option>город, Москва, Россия</option>
+                  <option>город, Новосибирск, Россия</option>
+                  <option>город, Санкт-Петербург, Россия</option>
+                  <option>город, Сочи, Россия</option>
+                  <option>город, Краснодар, Россия</option>
+                </select>
               </div>
               <div class="form-group">
                 <div class="date">
@@ -84,7 +91,7 @@
                   <input type="text" name="" id="" placeholder="Дата окончания аренды" class="form-control">
                 </div>
               </div>
-              <div class="buttons-row">
+              <div class="buttons-row visible-sm visible-md visible-lg">
                 <div data-toggle="buttons" class="buttons">
                   <label class="btn btn-danger btn-lg active">
                     <input type="radio" name="options" id="option1" autocomplete="off" checked>14 дней
@@ -104,8 +111,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4">
-              <button type="submit">ЗАБРОНИРОВАТЬ<img src="images/arrow-sub.png" alt=""></button>
+            <div class="col-sm-4"><a href="#" class="btn btn-submit">ЗАБРОНИРОВАТЬ<img src="images/arrow-sub.png" alt=""></a>
               <p class="summ text--sm--right text--xs--center">Итоговая сумма аренды за<b> 6 месяцев*</b></p>
             </div>
           </form>
