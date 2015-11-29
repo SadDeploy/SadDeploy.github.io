@@ -5494,6 +5494,9 @@ button.close {
   position: relative;
   width: 100%;
   display: inline-block; }
+  @media (max-width: 768px) {
+    .date:not(:last-child) {
+      margin-bottom: 10px; } }
   .date:after {
     content: '';
     background: url("../images/date.png") no-repeat center center;
