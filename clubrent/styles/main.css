@@ -5611,7 +5611,7 @@ article {
 .custom-js {
   transition: all 0.3s ease; }
 
-.fa-map-marker {
+.fa-map-marker, .fa-clock-o {
   width: 14px;
   text-align: center; }
 
