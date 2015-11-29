@@ -2318,7 +2318,7 @@
     .select2-container .select2-search--inline .select2-search__field {
       box-sizing: border-box;
       border: none;
-      font-size: 100%;
+      font-size: 16px;
       margin-top: 5px;
       padding: 0; }
       .select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button {
@@ -2327,7 +2327,7 @@
 .select2-dropdown {
   background-color: white;
   border: 1px solid #aaa;
-  border-radius: 4px;
+  font-size: 16px;
   box-sizing: border-box;
   display: block;
   position: absolute;
@@ -2413,7 +2413,7 @@
     float: right;
     font-weight: bold; }
   .select2-container--default .select2-selection--single .select2-selection__placeholder {
-    color: #999; }
+    color: #c6c9cc; font-size: 16px;}
   .select2-container--default .select2-selection--single .select2-selection__arrow {
     height: 40px;
     position: absolute;
