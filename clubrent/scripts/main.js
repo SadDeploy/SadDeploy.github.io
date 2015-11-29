@@ -21,6 +21,7 @@ $(window).load(function () {
     // datepicker
     $('.date input').datepicker({
         format: "mm.dd.yyyy",
+        autoclose: true,
         orientation: "bottom auto"
     });
 
