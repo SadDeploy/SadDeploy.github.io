@@ -1424,6 +1424,7 @@ textarea.form-control {
 .advantages__innerblock {
   padding: 40px 5px;
   border: 1px solid #ccc;
+  border-bottom: 1px solid transparent;
   box-shadow: 0 6px 0 0 #c41e3a;
 }
 
