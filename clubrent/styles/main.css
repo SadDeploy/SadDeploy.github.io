@@ -5428,11 +5428,12 @@ button.close {
   padding: 41px 0 91px; }
 
 .advantages {
-  padding: 47px 0 124px; }
+  padding: 47px 0 94px; }
   .advantages__innerblock {
     padding: 40px 5px;
     border: 1px solid #ccc;
     border-bottom: none;
+    margin-bottom: 30px;
     box-shadow: 0 6px 0 0 #c41e3a; }
     @media (min-width: 768px) {
       .advantages__innerblock {
