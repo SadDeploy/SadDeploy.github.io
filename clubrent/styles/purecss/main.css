@@ -1422,15 +1422,18 @@ textarea.form-control {
 }
 
 .advantages__innerblock {
+  border-bottom: 6px solid #c41e3a;
+  margin-bottom: 30px;
+}
+
+.advantages__innerblock-sec {
   padding: 40px 5px;
   border: 1px solid #ccc;
   border-bottom: none;
-  margin-bottom: 30px;
-  box-shadow: 0 6px 0 0 #c41e3a;
 }
 
 @media (min-width: 768px) {
-  .advantages__innerblock {
+  .advantages__innerblock-sec {
     height: 228px;
   }
 }
@@ -1764,6 +1767,10 @@ article a {
 
 .margtop130 {
   margin-top: 130px;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .img-xs-left {
