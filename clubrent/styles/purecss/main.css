@@ -1584,6 +1584,7 @@ article a {
 
 .choose h4 {
   margin-bottom: 14px;
+  color: #000;
 }
 
 .choose p {
@@ -1602,10 +1603,6 @@ article a {
   }
 }
 
-.choose .btn h4 {
-  color: #000;
-}
-
 .choose a p {
   margin-bottom: 0;
 }
@@ -1615,7 +1612,7 @@ article a {
   font-size: 20px;
   height: 91px;
   font-weight: 700;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.46);
   margin-bottom: 30px;
 }
