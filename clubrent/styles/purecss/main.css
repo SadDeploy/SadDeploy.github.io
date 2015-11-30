@@ -884,7 +884,7 @@ textarea.form-control {
   position: relative;
   display: block;
   text-decoration: none;
-  padding: 7px 5px;
+  padding: 7px 7px;
   font-size: 13px;
   font-weight: 700;
   color: black;
@@ -1600,6 +1600,10 @@ article a {
   .choose .btn {
     padding: 10px 30px;
   }
+}
+
+.choose .btn h4 {
+  color: #000;
 }
 
 .choose a p {
