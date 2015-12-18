@@ -1951,7 +1951,7 @@ main.main__catalog {
     margin-bottom: 50px; }
   .product__item-img {
     width: 100%;
-    overflow: auto;
+    overflow: hidden;
     padding: 30px 0; }
     .product__item-img__inner {
       padding: 0 40px; }
