@@ -263,7 +263,7 @@ y-axis
 ------------------------------------------------------------------------------------------------------------------------
 */
 
-	.mCSB_inside > .mCSB_container{ margin-right: 10px; }
+	.mCSB_inside > .mCSB_container{ margin-right: 4px; }
 
 	.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden{ margin-right: 0; } /* non-visible scrollbar */
 	
@@ -280,7 +280,7 @@ y-axis
 		height: auto;
 		left: auto;
 		top: 0;
-		right: auto;
+		right: -5px;
 		bottom: 0;
 	}
 
@@ -315,7 +315,7 @@ y-axis
 	.mCSB_scrollTools .mCSB_dragger{ /* the draggable element */
 		cursor: pointer;
 		width: 100%;
-		max-height: 24px !important;
+		max-height: 123px !important;
 		z-index: 1;
 	}
 
@@ -386,6 +386,7 @@ x-axis
 	max-width: 143px !important; /* minimum dragger width */
 	height: 100%;
 	left: 0;
+	border-radius: 25px;
 }
 
 .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar{
@@ -540,21 +541,21 @@ yx-axis
 
 	.mCS-light-thick.mCSB_scrollTools .mCSB_draggerRail, 
 	.mCS-dark-thick.mCSB_scrollTools .mCSB_draggerRail{
-		width: 1px;
+		width: 2px;
 		background-color: #f3f5f7;
 	}
 
 	.mCS-light-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, 
 	.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
-		width: 3px;
+		width: 6px;
 		background-color: #23ace7;
 	}
 
 	.mCS-light-thick.mCSB_scrollTools_horizontal .mCSB_draggerRail, 
 	.mCS-dark-thick.mCSB_scrollTools_horizontal .mCSB_draggerRail{
 		width: 100%;
-		height: 4px;
-		margin: 6px 0;
+		height: 2px;
+		margin: 7px 0;
 	}
 
 	.mCS-light-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar, 
@@ -562,6 +563,7 @@ yx-axis
 		width: 100%;
 		height: 6px;
 		margin: 5px auto;
+		border-radius: 20px;
 	}
 
 	.mCS-light-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{ background-color: #fff; background-color: rgba(255,255,255,0.85); }
@@ -587,6 +589,7 @@ yx-axis
 
 	.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
 		background-color: #23ace7;
+		border-radius: 25px;
 	}
 
 	.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{background-color: #006089; }

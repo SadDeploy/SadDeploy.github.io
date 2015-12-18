@@ -11,17 +11,27 @@ $(document).ready(function () {
             scrollingSpeed: 1000
         });
     }
+});
+
+$(window).load(function () {
 
     // phone
     $("[name=phone]").mask("+7 (999) 999-9999");
 
     // custom scroll
-    $(".catalog-submenu").mCustomScrollbar({
+    $(".aside-menu").mCustomScrollbar({
+        theme: "dark-thick"
+    });
+    $(".aside").mCustomScrollbar({
         theme: "dark-thick"
     });
     $(".product__item-img").mCustomScrollbar({
         theme: "dark-thick",
         axis: "x"
+    });
+
+    $('.menu__item-sub').click(function () {
+        $(this).toggleClass('active').next().slideToggle();
     });
 
     // choose
