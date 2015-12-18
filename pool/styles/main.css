@@ -1962,6 +1962,8 @@ main.main__catalog {
     line-height: 28px; }
     .product__item-desc p {
       margin-bottom: 24px; }
+    .product__item-desc li {
+      margin-bottom: 8px; }
     .product__item-desc-link {
       line-height: 35px; }
       .product__item-desc-link li:not(:last-child) {
