@@ -604,11 +604,11 @@ tbody.collapse.in {
   .btn--success.focus {
     color: #fff;
     background-color: #fff;
-    border-color: #fff; }
+    border-color: #15aef0; }
   .btn--success:hover {
     color: #fff;
     background-color: #fff;
-    border-color: #fff; }
+    border-color: #15aef0; }
   .btn--success:active,
   .btn--success.active,
   .open > .btn--success.dropdown-toggle {
@@ -2236,4 +2236,3 @@ ymaps {
 
 .padbot100 {
   padding-bottom: 100px; }
-
