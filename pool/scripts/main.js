@@ -33,11 +33,6 @@ $(window).load(function () {
         mouseWheelPixels: 70
     });
 
-    $('.menu__item-sub').click(function () {
-        $(this).toggleClass('active').next().slideToggle();
-        return false;
-    });
-
     // choose
     $('.brief__item').on('click', '.brief__item-element-js:not(.active)', function () {
         $(this).addClass('active').siblings().removeClass('active');
