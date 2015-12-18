@@ -2,7 +2,9 @@
 
 $(document).ready(function () {
 
-    if (screen.width > 768) {
+    var screen_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    if (screen_width <= 768) {
+
         // fullpage
         $('#fullpage').fullpage({
             anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage'],
