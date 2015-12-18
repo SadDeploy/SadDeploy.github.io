@@ -32,6 +32,7 @@ $(window).load(function () {
 
     $('.menu__item-sub').click(function () {
         $(this).toggleClass('active').next().slideToggle();
+        return false;
     });
 
     // choose
