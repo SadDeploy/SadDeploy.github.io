@@ -1981,6 +1981,8 @@ main.main__catalog {
         .product__elem-item-inner + .product__elem-item {
           left: 2px;
           position: relative; }
+        .product__elem-item-inner + .product__elem-item  .product__elem-item-inner {
+          padding-top: 50px;}
       .product__elem-item h6 {
         padding-top: 30px;
         padding-left: 30px;
