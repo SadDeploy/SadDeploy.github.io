@@ -20,14 +20,17 @@ $(window).load(function () {
 
     // custom scroll
     $(".aside-menu").mCustomScrollbar({
-        theme: "dark-thick"
+        theme: "dark-thick",
+        mouseWheelPixels: 70
     });
     $(".aside").mCustomScrollbar({
-        theme: "dark-thick"
+        theme: "dark-thick",
+        mouseWheelPixels: 70
     });
     $(".product__item-img").mCustomScrollbar({
         theme: "dark-thick",
-        axis: "x"
+        axis: "x",
+        mouseWheelPixels: 70
     });
 
     $('.menu__item-sub').click(function () {
