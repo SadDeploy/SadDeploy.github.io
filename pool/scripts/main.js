@@ -3,7 +3,7 @@
 $(document).ready(function () {
 
     var screen_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-    if (screen_width <= 768) {
+    if (screen_width > 768) {
 
         // fullpage
         $('#fullpage').fullpage({
