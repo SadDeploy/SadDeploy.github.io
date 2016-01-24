@@ -1,18 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300&subset=latin,cyrillic);
-/* gradient */
-/* opacity */
-/* box shadow */
-/* text shadow */
-/* box sizing */
-/* border radius */
-/* double border */
-/* transform */
-/* transform-origin */
-/* transform style */
-/* triple borders */
-/* keyframes */
-/* animation */
-/* Responsive utilities */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -271,48 +257,6 @@ img {
   .container:after {
     clear: both; }
 
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    -webkit-box-shadow: none !important;
-       -moz-box-shadow: none !important;
-            box-shadow: none !important;
-    text-shadow: none !important; }
-  a,
-  a:visited {
-    text-decoration: underline; }
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: ""; }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-  thead {
-    display: table-header-group; }
-  tr,
-  img {
-    page-break-inside: avoid; }
-  img {
-    max-width: 100% !important; }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
-  h2,
-  h3 {
-    page-break-after: avoid; }
-  .hidden--print {
-    display: none !important; } }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: inherit;
   font-weight: 400;
@@ -473,6 +417,15 @@ blockquote {
     position: relative; }
     .header__row + .header__row {
       width: 29%; }
+
+  @media (max-width: 1118px) {
+  	.header__row {
+  		width: auto;}
+    .header__row + .header__row {
+      width: 25%; }
+    .header__row + .header__row + .header__row {
+      width: auto; float: right; }
+  	}
   .header__menu-item {
     margin-bottom: 10px; }
     .header__menu-item_link {
@@ -642,6 +595,7 @@ blockquote {
             box-shadow: 0 16px 20px rgba(0, 0, 0, 0.2);
     width: 283px;
     display: inline-block;
+    vertical-align: top;
     margin: 0 5px 14px; }
     .catalog__row-body--title {
       color: #ff3c00; }
